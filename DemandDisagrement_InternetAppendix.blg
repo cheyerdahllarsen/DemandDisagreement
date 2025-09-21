@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: DemandDisagrement_InternetAppendix.aux
+The style file: jf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: OLGBeliefs.bib
+Done.
+You've used 8 entries,
+            2426 wiz_defined-function locations,
+            653 strings with 5995 characters,
+and the built_in function-call counts, 4095 in all, are:
+= -- 419
+> -- 218
+< -- 9
++ -- 74
+- -- 56
+* -- 309
+:= -- 792
+add.period$ -- 8
+call.type$ -- 8
+change.case$ -- 54
+chr.to.int$ -- 8
+cite$ -- 8
+duplicate$ -- 136
+empty$ -- 241
+format.name$ -- 72
+if$ -- 819
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 6
+newline$ -- 36
+num.names$ -- 48
+pop$ -- 47
+preamble$ -- 1
+purify$ -- 46
+quote$ -- 0
+skip$ -- 139
+stack$ -- 0
+substring$ -- 266
+swap$ -- 23
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 88
+warning$ -- 0
+while$ -- 56
+width$ -- 0
+write$ -- 105

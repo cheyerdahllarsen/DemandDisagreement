@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: jf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: OLGBeliefsAccepted.bib
+Warning--I didn't find a database entry for ""
+Done.
+You've used 64 entries,
+            2426 wiz_defined-function locations,
+            998 strings with 13417 characters,
+and the built_in function-call counts, 33036 in all, are:
+= -- 3337
+> -- 1906
+< -- 68
++ -- 653
+- -- 497
+* -- 2640
+:= -- 6437
+add.period$ -- 64
+call.type$ -- 64
+change.case$ -- 445
+chr.to.int$ -- 64
+cite$ -- 64
+duplicate$ -- 1074
+empty$ -- 1929
+format.name$ -- 660
+if$ -- 6574
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 61
+newline$ -- 204
+num.names$ -- 384
+pop$ -- 379
+preamble$ -- 1
+purify$ -- 381
+quote$ -- 0
+skip$ -- 1054
+stack$ -- 0
+substring$ -- 2031
+swap$ -- 135
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 701
+warning$ -- 0
+while$ -- 454
+width$ -- 0
+write$ -- 772
+(There was 1 warning)

@@ -1,0 +1,321 @@
+\ifx\undefined\BySame
+\newcommand{\BySame}{\leavevmode\rule[.5ex]{3em}{.5pt}\ }
+\fi
+\ifx\undefined\textsc
+\newcommand{\textsc}[1]{{\sc #1}}
+\newcommand{\emph}[1]{{\em #1\/}}
+\let\tmpsmall\small
+\renewcommand{\small}{\tmpsmall\sc}
+\fi
+\begin{thebibliography}{}
+
+\harvarditem[Albuquerque, Eichenbaum, Luo, and Rebelo]{Albuquerque, Eichenbaum,
+  Luo, and Rebelo}{2016}{ALBUQUERQUE2016}
+ Albuquerque, R., M. Eichenbaum, V.~X. Luo,  and S. Rebelo, 2016, Valuation
+  risk and asset prices, \emph{Journal of Finance} 71, 2861--2903.
+
+\harvarditem[Angeletos and Lao]{Angeletos and Lao}{2013}{AngeletosLao2013}
+ Angeletos, George-Marios,  and Jennifer Lao, 2013, Sentiments,
+  \emph{Econometrica} 81, 739--779.
+
+\harvarditem[Baker and Wurgler]{Baker and Wurgler}{2007}{BakerWurgler2007}
+ Baker, Malcom,  and Jeffrey Wurgler, 2007, Investor sentiment in the stock
+  market, \emph{Journal of Economic Perspectives} 21, 129--151.
+
+\harvarditem[Bansal and Yaron]{Bansal and Yaron}{2004}{bansal-yaron:04}
+ Bansal, Ravi,  and Amir Yaron, 2004, Risks for the long run: A potential
+  resolution of asset pricing puzzles, \emph{Journal of Finance} 59,
+  1481--1509.
+
+\harvarditem[Basak]{Basak}{2000}{Basak2000}
+ Basak, Suleyman, 2000, A model of dynamic equilibrium asset pricing with
+  heterogeneous beliefs and extraneous risk, \emph{Journal of Economic Dynamics
+  and Control} 24, 63--95.
+
+\harvarditem[Basak]{Basak}{2005}{Basak2005}
+ \BySame{}, 2005, Asset pricing with heterogeneous beliefs, \emph{Journal of
+  Banking and Finance} 29, 2849--2881.
+
+\harvarditem[Bauer and Chernov]{Bauer and Chernov}{2024}{BauerChernov2024a}
+ Bauer, Michael,  and Mikhail Chernov, 2024, Interest rate skewness and biased
+  beliefs, \emph{Journal of Financial} 79, 173--217.
+
+\harvarditem[Berrada]{Berrada}{2006}{Berrada2006}
+ Berrada, T., 2006, Incomplete information, heterogeneity, and asset pricing,
+  \emph{Journal of Financial Econometrics} 4, 136--160.
+
+\harvarditem[Bhamra and Uppal]{Bhamra and Uppal}{2014}{BhamraUppal2014}
+ Bhamra, H.~S.,  and R. Uppal, 2014, Asset prices with heterogeneity in
+  preferences and beliefs, \emph{Review of Financial Studies} 27, 519--580.
+
+\harvarditem[Blanchard]{Blanchard}{1985}{Blanchard2013}
+ Blanchard, O, 1985, {Debt, Deficits, and Finite Horizons}, \emph{Journal of
+  Political Economy} 93, 223--247.
+
+\harvarditem[Brunnermeier and Sannikov]{Brunnermeier and
+  Sannikov}{2014}{BrunnermeierSannikov2014}
+ Brunnermeier, Markus~K.,  and Yuliy Sannikov, 2014, A macroeconomic model with
+  a financial sector, \emph{American Economic Review} 104, 379--421.
+
+\harvarditem[Buraschi and Jiltsov]{Buraschi and Jiltsov}{2006}{Burschi06}
+ Buraschi, A.,  and A. Jiltsov, 2006, Model uncertainty and option markets with
+  heterogeneous beliefs, \emph{Journal of Finance} 61, 2841--2897.
+
+\harvarditem[Buraschi, Trojani, and Vedolin]{Buraschi, Trojani, and
+  Vedolin}{2014}{Burschi14}
+ Buraschi, A., F. Trojani,  and A. Vedolin, 2014, When uncertainty blows in the
+  orchard: Comovement and equilibrium volatility risk premia, \emph{Journal of
+  Finance} 69, 101--137.
+
+\harvarditem[Campbell]{Campbell}{1993}{Campbell93}
+ Campbell, J.~Y., 1993, What moves the stock and bond markets? {A} variance
+  decomposition for long-term asset returns, \emph{Journal of Finance} 48,
+  3--37.
+
+\harvarditem[Campbell and Cochrane]{Campbell and
+  Cochrane}{1999}{campbell-cochrane:99}
+ \BySame{},  and J.~H. Cochrane, 1999, By force of habit: A consumption based
+  explanation of aggregate stock market behavior, \emph{Journal of Political
+  Economy} 107, 205--251.
+
+\harvarditem[Chan and Kogan]{Chan and Kogan}{2002}{chan-kogan:02}
+ Chan, Y.~L.,  and L. Kogan, 2002, Catching up with the {J}oneses:
+  Heterogeneous preferences and the dynamics of asset prices, \emph{Journal of
+  Political Economy} 110, 1255--1285.
+
+\harvarditem[Cochrane and Hansen]{Cochrane and
+  Hansen}{1992}{CochraneHansen1992}
+ Cochrane, John,  and Lars~Peter Hansen, 1992, Asset pricing explorations for
+  macroeconomics, NBER Macroeconomics Annual 7.
+
+\harvarditem[Cochrane]{Cochrane}{2005}{Cochrane2005}
+ Cochrane, John~H., 2005,  \emph{Asset Pricing} (Princeton University Press) 1
+  revised edn.
+
+\harvarditem[Constantinides, Donaldson, and Mehra]{Constantinides, Donaldson,
+  and Mehra}{2002}{ConstantinidesDonaldsonMehra2002}
+ Constantinides, George~M., John~B. Donaldson,  and Rajnish Mehra, 2002, Junior
+  can't borrow: a new perspective on the equity premium puzzle, \emph{The
+  Quarterly Journal of Economics} 117, 269--296.
+
+\harvarditem[Cox and Huang]{Cox and Huang}{1989}{Cox1989}
+ Cox, JC,  and C Huang, 1989, {Optimal Consumption and Portfolio Policies when
+  Asset Prices Follow a Diffusion Process}, \emph{Journal of Economic Theory}
+  83, 33--83.
+
+\harvarditem[Cujean and Hasler]{Cujean and Hasler}{2017}{CujeanHasler17}
+ Cujean, J.,  and M. Hasler, 2017, Why does return predictability concentrate
+  in bad times?, \emph{Journal of Finance} 72, 2717--2758.
+
+\harvarditem[Cvitanic, Jouini, Malamud, and Napp]{Cvitanic, Jouini, Malamud,
+  and Napp}{2012}{cvitanic-jouini-malamud-napp:12}
+ Cvitanic, Jaksa, Elyes Jouini, Semyon Malamud,  and Clotilde Napp, 2012,
+  Financial markets equilibrium with heterogeneous agents, \emph{Review of
+  Finance} 16, 285--321.
+
+\harvarditem[Cvitanic and Malamud]{Cvitanic and Malamud}{2011}{Cvitanic2011}
+ Cvitanic, J.,  and S. Malamud, 2011, Price impact and portfolio impact,
+  \emph{Journal of Financial Economics} 100, 201--225.
+
+\harvarditem[David]{David}{2008}{David2008}
+ David, Alexander, 2008, Heterogeneous beliefs, speculation, and the equity
+  premium, \emph{Journal of Finance} 63, 41--83.
+
+\harvarditem[Detemple and Murthy]{Detemple and
+  Murthy}{1994}{DetempleMurthy1994}
+ Detemple, Jerome~B.,  and Shashidhar Murthy, 1994, Intertemporal asset pricing
+  with heterogeneous beliefs, \emph{Journal of Economic Theory} 62, 294--320.
+
+\harvarditem[Dumas]{Dumas}{1989}{dumas:89}
+ Dumas, B., 1989, Two-person dynamic equilibrium in the capital market,
+  \emph{Review of Financial Studies} 2, 157--188.
+
+\harvarditem[Dumas, Kurshev, and Uppal]{Dumas, Kurshev, and
+  Uppal}{2009}{Dumas2009}
+ Dumas, B, A Kurshev,  and R Uppal, 2009, Equilibrium portfolio strategies in
+  the presence of sentiment risk and excess volatility, \emph{Journal of
+  Finance} 64, 579--629.
+
+\harvarditem[Ehling, Gallmeyer, Heyerdahl-Larsen, and Illeditsch]{Ehling,
+  Gallmeyer, Heyerdahl-Larsen, and Illeditsch}{2018}{EGHI2017}
+ Ehling, P., M. Gallmeyer, C. Heyerdahl-Larsen,  and P. Illeditsch, 2018,
+  Disagreement about inflation and the yield curve, \emph{Journal of Financial
+  Economics} 127 (3), 459 -- 484.
+
+\harvarditem[Ehling, Graniero, and Heyerdahl-Larsen]{Ehling, Graniero, and
+  Heyerdahl-Larsen}{2018}{EGH18}
+ Ehling, P., A. Graniero,  and C. Heyerdahl-Larsen, 2018, Asset prices and
+  portfolio choice with learning from experience, \emph{Review of Economic
+  Studies} 85 (3), 1752 -- 1780.
+
+\harvarditem[Ehling and Heyerdahl-Larsen]{Ehling and
+  Heyerdahl-Larsen}{2017}{EhlingHeyerdahlLarsen2016}
+ Ehling, Paul,  and Christian Heyerdahl-Larsen, 2017, Correlations,
+  \emph{Management Science} 63, 1919--1937.
+
+\harvarditem[Gallmeyer, Hollifield, and Seppi]{Gallmeyer, Hollifield, and
+  Seppi}{2017}{GallmeyerHollifieldSeppi2017WP}
+ Gallmeyer, Michael, Burton Hollifield,  and Duane Seppi, 2017, Asset demand
+  risk and demand discovery, Working Paper.
+
+\harvarditem[Garber and King]{Garber and King}{1983}{GarberKing83}
+ Garber, P.~M.,  and R.~G. King, 1983, Deep structural excavation? {A} critique
+  of {E}uler equation methods, \emph{NBER Working paper 31}.
+
+\harvarditem[G\^{a}rleanu, Kogan, and Panageas]{G\^{a}rleanu, Kogan, and
+  Panageas}{2012}{GarlenauKoganPanageas2012}
+ G\^{a}rleanu, Nicolae, Leonid Kogan,  and Stavros Panageas, 2012, Displacement
+  risk and asset returns, \emph{Journal of Financial Economics} 105, 491--510.
+
+\harvarditem[G\^{a}rleanu and Panageas]{G\^{a}rleanu and
+  Panageas}{2015}{Garleanu2008}
+ G\^{a}rleanu, N,  and S Panageas, 2015, Young, old, conservative and bold: The
+  implications of heterogeneity and finite lives for asset pricing,
+  \emph{Journal of Political Economy} 123, 670--685.
+
+\harvarditem[G\^{a}rleanu and Panageas]{G\^{a}rleanu and
+  Panageas}{2021}{GPcoordination:2021}
+ G\^{a}rleanu, Nicolae,  and Stavros Panageas, 2021, What to expect when
+  everyone is expecting: Self-fulfilling expectations and asset-pricing
+  puzzles, \emph{Journal of Financial Economics} 140, 54--73.
+
+\harvarditem[G\^{a}rleanu and Panageas]{G\^{a}rleanu and
+  Panageas}{2023}{GarlenauPanageas2023JPE}
+ \BySame{}, 2023, Heterogeneity and asset prices: An intergenerational
+  approach, \emph{Journal of Political Economy} 131, 839--876.
+
+\harvarditem[G\^{a}rleanu, Panageas, and Zheng]{G\^{a}rleanu, Panageas, and
+  Zheng}{2021}{GPG:2021}
+ \BySame{},  and Geoffery Zheng, 2021, A long and a short leg make for a wobbly
+  equilibrium, Working Paper.
+
+\harvarditem[Giacoletti, Laursen, and Singleton]{Giacoletti, Laursen, and
+  Singleton}{2021}{GiacolettiLaursenSingleton2021}
+ Giacoletti, Marco, Kristoffer Laursen,  and Kenneth Singleton, 2021, Learning
+  from disagreement in the {U.S. Treasury} bond market, \emph{Journal of
+  Finance} 76, 395--441.
+
+\harvarditem[Gollier and Zeckhauser]{Gollier and
+  Zeckhauser}{2005}{GollierZeckhauser05}
+ Gollier, C.,  and R. Zeckhauser, 2005, Aggregation of heterogeneous time
+  preferences, \emph{Journal of Political Economy} 113, 878--896.
+
+\harvarditem[Gomes and Michaelides]{Gomes and Michaelides}{2005}{GOMES05}
+ Gomes, Francisco,  and Alexander Michaelides, 2005, Optimal life-cycle asset
+  allocation: Understanding the empirical evidence, \emph{Journal of Finance}
+  60, 869--869.
+
+\harvarditem[Gomes and Michaelides]{Gomes and
+  Michaelides}{2008}{GomesMichaelides08}
+ Gomes, F.,  and A. Michaelides, 2008, Asset pricing with limited risk sharing
+  and heterogeneous agents, \emph{Review of Financial Studies} 21, 415--448.
+
+\harvarditem[Grossman]{Grossman}{1988}{Grossman1988}
+ Grossman, Sanford~J., 1988, An analysis of the implications for stock and
+  futures price volatility of program trading and dynamic hedging strategies,
+  \emph{The Journal of Business} 61, 275--298.
+
+\harvarditem[Harrison and Kreps]{Harrison and Kreps}{1978}{Harrison1978}
+ Harrison, J,  and D Kreps, 1978, Speculative investor behavior in a stock
+  market with heterogeneous expectations, \emph{Quarterly Journal of Economics}
+  92, 323--336.
+
+\harvarditem[Heyerdahl-Larsen and Illeditsch]{Heyerdahl-Larsen and
+  Illeditsch}{2023}{HeyerdahlLarsenIlledistch23}
+ Heyerdahl-Larsen, C.,  and P. Illeditsch, 2023, The market view, \emph{Working
+  paper}.
+
+\harvarditem[Heyerdahl-Larsen and Illeditsch]{Heyerdahl-Larsen and
+  Illeditsch}{2025}{HLI2025}
+ \BySame{}, 2025, The market view: reconciling survey and statistical equity
+  premia., \emph{Working paper}.
+
+\harvarditem[Jermann]{Jermann}{1998}{Jermann1998}
+ Jermann, Urban~J., 1998, Asset prices in production economies, \emph{Journal
+  of Monetary Economics} 41, 257--275.
+
+\harvarditem[Jouini and Napp]{Jouini and Napp}{2007}{JouiniNapp2007}
+ Jouini, Elyes,  and Clotilde Napp, 2007, Consensus consumer and intertemporal
+  asset pricing with heterogeneous beliefs, \emph{Review of Economic Studies}
+  74, 1149 -- 1174.
+
+\harvarditem[Karatzas, Lehoczky, and Shreve]{Karatzas, Lehoczky, and
+  Shreve}{1987}{KaratzasLehoczkyShreve1987}
+ Karatzas, I., J.~P. Lehoczky,  and S.~E. Shreve, 1987, Optimal portfolio and
+  consumption decisions for a small investor on a finite horizon, \emph{SIAM
+  Journal of Control and Optimization} 25, 1157--1186.
+
+\harvarditem[Longstaff and Wang]{Longstaff and Wang}{2013}{longstaff-wang:12}
+ Longstaff, F.~A.,  and J. Wang, 2013, Asset pricing and the credit market,
+  \emph{Review of Financial Studies} 25, 3169--3215.
+
+\harvarditem[Lucas]{Lucas}{1978}{Lucas1978}
+ Lucas, Robert~E.~Jr, 1978, Asset prices in an exchange economy,
+  \emph{Econometrica} 46, 1429--1445.
+
+\harvarditem[Maurer]{Maurer}{2012}{Maurer12}
+ Maurer, T., 2012, Is consumption growth merely a sideshow in asset pricing?,
+  \emph{Working paper, Washington University in St. Louis}.
+
+\harvarditem[Miller]{Miller}{1977}{MillerEdward1977}
+ Miller, Edward~M., 1977, Risk, uncertainty, and divergence of opinion,
+  \emph{Journal of Finance} XXXII, 1151--1168.
+
+\harvarditem[Panageas]{Panageas}{2020}{panageas:2020}
+ Panageas, Stavros, 2020, The implications of heterogeneity and inequality for
+  asset pricing, \emph{Foundations and Trends in Finance} 12, 199--275.
+
+\harvarditem[Pavlova and Rigobon]{Pavlova and
+  Rigobon}{2007}{pavlova-rigobon:07}
+ Pavlova, A.,  and R. Rigobon, 2007, Asset prices and exchange rates,
+  \emph{Review of Financial Studies} 20, 1139--1180.
+
+\harvarditem[Ross, Green, and House]{Ross, Green, and
+  House}{1977}{RossGreenHouse77}
+ Ross, L., D. Green,  and P. House, 1977, The false consensus effect: an
+  egocentric bias in social perception and attribution process, \emph{Journal
+  of Experimental Social Psychology} pp. 279 -- 301.
+
+\harvarditem[Scheinkman and Xiong]{Scheinkman and
+  Xiong}{2003}{ScheinkmanXiong2003}
+ Scheinkman, Jos\'e~A.,  and Wei Xiong, 2003, Overconfidence and speculative
+  bubbles, \emph{Journal of Political Economy} 111, 1183--1219.
+
+\harvarditem[{Van Binsbergen}]{{Van Binsbergen}}{2021}{JVB:2021}
+ {Van Binsbergen}, Jules~H., 2021, Duration-based stock valuation: Reassessing
+  stock market performance and volatility, Working Paper.
+
+\harvarditem[Wang]{Wang}{1996}{wang:96}
+ Wang, J., 1996, The term structure of interest rates in a pure exchange
+  economy with heterogeneous investors, \emph{Journal of Financial Economics}
+  41, 75--110.
+
+\harvarditem[Weinbaum]{Weinbaum}{2009}{weinbaum:09}
+ Weinbaum, David, 2009, Investor heterogeneity, asset pricing and volatility
+  dynamics, \emph{Journal of Economic Dynamics and Control} 33, 1379--1397.
+
+\harvarditem[Xiong and Yan]{Xiong and Yan}{2010}{xiong-yan-2010}
+ Xiong, Wei,  and Hongjun Yan, 2010, Heterogeneous expectations and bond
+  markets, \emph{Review of Financial Studies} 23, 1433--1466.
+
+\harvarditem[Xiouros and Zapatero]{Xiouros and
+  Zapatero}{2024}{XiourosZapatero2024}
+ Xiouros, Costas,  and Fernando Zapatero, 2024, Disagreement, information
+  quality and asset prices, \emph{Journal of Financial Economics} 153, 1--30.
+
+\harvarditem[Zapatero]{Zapatero}{1998}{Zapatero1998}
+ Zapatero, Fernando, 1998, Effects of financial innovations on market
+  volatility when beliefs are heterogeneous, \emph{Journal of Economic Dynamics
+  and Control} 22, 597--626.
+
+\harvarditem[Zapatero and Xiouros]{Zapatero and
+  Xiouros}{2010}{zapatero-xiouros:10}
+ \BySame{},  and Costas Xiouros, 2010, The representative agent of an economy
+  with external habit formation and heterogeneous risk aversion, \emph{Review
+  of Financial Studies} 23, 3017--3047.
+
+\harvarditem[Zhou]{Zhou}{2018}{Zhou2018}
+ Zhou, Guofu, 2018, Measuring investor sentiment, \emph{Annual Review of
+  Financial Economics} 10, 239--259.
+
+\end{thebibliography}

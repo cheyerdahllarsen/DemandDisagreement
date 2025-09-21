@@ -1,6 +1,7 @@
-    \documentclass[preprint,11pt,authoryear]{elsarticle}
+\documentclass[preprint,11pt,authoryear]{elsarticle}
     \usepackage{amsmath,amsthm,graphicx,amsfonts,booktabs,caption,hyperref,url,xcolor,float,array,multirow,changepage}
     \usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+    \usepackage{jf}
 \usepackage{setspace}
     \DeclareCaptionLabelFormat{andtable}{#1~#2  \&  \tablename~\thetable}
      
@@ -647,12 +648,14 @@ We develop an overlapping generations (OLG) model in which the cross-sectional d
 
  \begingroup
     	\setstretch{1.21}
-	\bibliographystyle{apalike}
+	\bibliographystyle{jf}
 	\bibliography{OLGBeliefsAccepted}\label{references}
 \endgroup   
 
 \renewcommand{\baselinestretch}{1}  % linespacing, 2 doublespace
     
+% Define aexample counter for JF style
+\newcounter{aexample}
 
 \appendix
 

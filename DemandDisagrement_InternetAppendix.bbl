@@ -1,0 +1,36 @@
+\ifx\undefined\BySame
+\newcommand{\BySame}{\leavevmode\rule[.5ex]{3em}{.5pt}\ }
+\fi
+\ifx\undefined\textsc
+\newcommand{\textsc}[1]{{\sc #1}}
+\newcommand{\emph}[1]{{\em #1\/}}
+\let\tmpsmall\small
+\renewcommand{\small}{\tmpsmall\sc}
+\fi
+\begin{thebibliography}{}
+
+\harvarditem[Black]{Black}{1976}{Black1976}
+ Black, Fisher, 1976, Studies of stock price volatility changes, \emph{Proceedings of the Business and Economics Section of the American Statistical Association} pp. 177--181.
+
+\harvarditem[Ehling, Graniero, and Heyerdahl-Larsen]{Ehling, Graniero, and Heyerdahl-Larsen}{2018}{EGH18}
+ Ehling, P., A. Graniero,  and C. Heyerdahl-Larsen, 2018, Asset prices and portfolio choice with learning from experience, \emph{Review of Economic Studies} 85 (3), 1752 -- 1780.
+
+\harvarditem[Ehling and Heyerdahl-Larsen]{Ehling and Heyerdahl-Larsen}{2017}{EhlingHeyerdahlLarsen2016}
+ Ehling, Paul,  and Christian Heyerdahl-Larsen, 2017, Correlations, \emph{Management Science} 63, 1919--1937.
+
+\harvarditem[Grossman and Zhou]{Grossman and Zhou}{1996}{grossman-zhou:96}
+ Grossman, S.~J.,  and Z. Zhou, 1996, Equilibrium analysis of portfolio insurance, \emph{Journal of Finance} 51, 1379--1403.
+
+\harvarditem[Hasanhodzic and Lo]{Hasanhodzic and Lo}{2011}{HasanhodzicLo2011}
+ Hasanhodzic, Jasmina,  and Andrew~W. Lo, 2011, Black's leverage effect is not due to leverage, Working Paper.
+
+\harvarditem[Heston]{Heston}{1993}{Heston1993}
+ Heston, S.~L., 1993, A closed-form solution for options with stochastic volatility with applications to bond and currency options, \emph{Review of Financial Studies} 6, p.~327--343.
+
+\harvarditem[Labbe]{Labbe}{2017}{filterpy}
+ Labbe, Roger, 2017, filterpy: Kalman filtering and optimal estimation library in python, \url{https://github.com/rlabbe/filterpy}.
+
+\harvarditem[Longstaff and Wang]{Longstaff and Wang}{2013}{longstaff-wang:12}
+ Longstaff, F.~A.,  and J. Wang, 2013, Asset pricing and the credit market, \emph{Review of Financial Studies} 25, 3169--3215.
+
+\end{thebibliography}
