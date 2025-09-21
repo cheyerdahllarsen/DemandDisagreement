@@ -1,0 +1,126 @@
+    \documentclass[12pt]{article}
+    \usepackage{amsmath,amsthm,epsfig,graphicx}
+    \usepackage{enumerate}
+    \usepackage{harvard}            % JF style to reference
+    \usepackage{setspace}          % doublespace
+    \usepackage{amsfonts}
+    \usepackage{float}
+    \usepackage{url}
+    \usepackage{hyperref}
+    \usepackage{xcolor}
+    \usepackage{booktabs}
+    \usepackage{pdflscape}  
+    \usepackage[T1]{fontenc}
+     \usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+     \DeclareCaptionLabelFormat{andtable}{#1~#2  \&  \tablename~\thetable}
+     
+     
+
+
+    \setlength{\textwidth}{6.2in} \setlength{\textheight}{9.2in}
+    \setlength{\evensidemargin}{.25in}
+    \setlength{\oddsidemargin}{\evensidemargin}
+    \setlength{\topmargin}{0.25in} \setlength{\headheight}{0in}
+    \setlength{\headsep}{0in} \setlength{\topskip}{0in}
+    \setlength{\parskip}{0cm}
+    
+    
+    
+    
+    
+
+    \renewcommand{\baselinestretch}{1.5}  % linespacing, 2 doublespace
+    \parskip 3pt          % sets spacing between paragraphs
+   \parindent 15pt         % sets leading space for paragraphs, 0=noindent
+
+    \theoremstyle{plain}
+\newtheorem{lemma}{Lemma} 
+\newtheorem{theorem}{Theorem}
+\newtheorem{prop}{Proposition} 
+\newtheorem{corollary}{Corollary}
+\newtheorem{defn}{Definition}
+\newtheorem{exam}{Example}
+\newtheorem{rmk}{Remark}
+
+\newcommand{\olpi}{\overline{\pi}}
+\newcommand{\ulpi}{\underline{\pi}}
+
+
+    \usepackage{multirow}
+    \usepackage{array}
+    \usepackage{changepage}
+    \newcommand{\w}{1.5cm}
+
+
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\newcommand{\bfsym}[1]{\boldsymbol{#1}}               
+\renewcommand{\labelenumi}{(\theenumi)}                 % changes style of first layer of eunmerate
+\renewcommand{\theenumi}{\roman{enumi}}                 % changes first layer of enumerate environment
+\renewcommand{\labelenumii}{(\theenumi)(\theenumii)}   % changes style of second layer of eunmerate
+\renewcommand{\theenumii}{\alph{enumii}}                % changes second layer of enumerate environment
+
+\newcommand{\halfskip}{\vskip 0.5\baselineskip}
+
+\begin{document}
+
+
+\input{InternetAppendix_TitlePage}
+
+
+This Internet Appendix serves as a companion to our paper ``Demand Disagreement.'' It provides additional results and proofs not reported in the main text due to space constraints. 
+
+\begin{enumerate}
+ \item Empirical Results
+ \item Unscented Kalman Filter (UKF)
+ \item Using yield forecast disagreement and macro disagreement in the UKF
+ \item Alternative Calibration
+ \item Reverse False Consensus Bias
+ \item General disagreement
+ \item Production economy
+ \item Wealth Shares
+ \item Correlation Puzzle
+ \item Price-dividend ration and return predictability
+ \item Changes in demand risk exposure
+ \item Black's leverage effect
+\end{enumerate}
+
+
+\input{InternetAppendix_DemandDisagreementRegressions.tex}
+\newpage
+\input{InternetAppendix_UKF.tex}
+\newpage
+\input{InternetAppendix_FilteringExtendedResults.tex}
+\newpage
+\input{InternetAppendix_AlternativeCalibration.tex}
+\newpage
+\input{InternetAppendix_AltPars.tex}
+\newpage
+\input{InternetAppendix_ReverseBias.tex}
+\newpage
+\input{InternetAppendix_GeneralDisagreement.tex}
+\newpage
+\input{InternetAppendix_Production.tex}
+\newpage
+\input{InternetAppendix_WealthShares.tex}
+\newpage
+\input{InternetAppendix_CorrelationPuzzle.tex}
+\newpage
+\input{InternetAppendix_PDpredictability.tex}
+\newpage
+\input{InternetAppendix_Trading.tex}
+\newpage
+\input{InternetAppendix_BlacksLeverage.tex}
+\bibliographystyle{apalike}
+\newpage
+\bibliography{OLGBeliefs}\label{references}
+
+\end{document}
+\bibliographystyle{apalike}
+\newpage
+\bibliography{OLGBeliefs}\label{references}
+
+
+
+
+

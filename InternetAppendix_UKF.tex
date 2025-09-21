@@ -1,0 +1,70 @@
+\section{Unscented Kalman Filter}
+In the paper we back out the unobserved values of the two state variables $\alpha$ and $f$ using a Unscented Kalman Filter (UKF). Rather than working with $\alpha_t$, we instead use with $l_t$ where the mapping is $\alpha_t = \frac{1}{1+e^{-l_t}}$. In this section we briefly outline the UKF and then explain how we applied it in our setting.
+
+The Unscented Kalman Filter (UKF) is a recursive algorithm used for estimating the state of a nonlinear system. It approximates the distribution of the state by propagating a set of ``sigma points'' through the system. We now outline some of the key equations. 
+
+The state transition from time \( t \) to \( t+1 \) is given by:
+\begin{equation}
+    \mathbf{X}_{t+1} = \mu(\mathbf{X}_t) + \sigma(\mathbf{X}_t) \, \boldsymbol{\varepsilon}_{t+1}
+\end{equation}
+where \( \mu(\mathbf{X}_t) \) is the drift term and \( \sigma(\mathbf{X}_t) \, \boldsymbol{\varepsilon}_{t+1} \) represents the process noise with standard normal vector \( \boldsymbol{\varepsilon}_{t+1} \).
+
+The observation equation at time \( t \) is expressed as:
+\begin{equation}
+    \mathbf{Y}_t = f(\mathbf{X}_t) + \mathbf{u}_t
+\end{equation}
+where \( f(\mathbf{X}_t) \) is the measurement function and \( \mathbf{u}_t \) denotes the observation noise.
+
+To handle nonlinearity, the UKF selects a set of sigma points that capture the mean and covariance of the state distribution:
+\begin{equation}
+    \mathbf{X}^{(i)} = \begin{cases}
+        \mathbf{X}_t, & i = 0 \\
+        \mathbf{X}_t + \sqrt{(n + \lambda) \mathbf{P}_t}^i, & i = 1, \dots, n \\
+        \mathbf{X}_t - \sqrt{(n + \lambda) \mathbf{P}_t}^{i-n}, & i = n+1, \dots, 2n
+    \end{cases}
+\end{equation}
+where \( \mathbf{P}_t \) is the state covariance matrix and \( \lambda \) is a scaling parameter.
+
+Using the propagated sigma points, the predicted state and covariance are computed as:
+\begin{align}
+    \hat{\mathbf{X}}_{t+1|t} &= \sum_{i=0}^{2n} w^{(i)} \, \mathbf{X}^{(i)}_{t+1} \\
+    \mathbf{P}_{t+1|t} &= \sum_{i=0}^{2n} w^{(i)} \left( \mathbf{X}^{(i)}_{t+1} - \hat{\mathbf{X}}_{t+1|t} \right) \left( \mathbf{X}^{(i)}_{t+1} - \hat{\mathbf{X}}_{t+1|t} \right)^T
+\end{align}
+\subsection{Application to the baseline UKF results in Section V}
+To apply the UKF to our model, we discretize the dynamics of the two state variables. Specifically, given that we have quarterly data we set one period to be a quarter. The state transition system $X_t = \left(l_t, f_t\right)$ is
+\begin{equation}
+    \mu(\mathbf{X}_t) = \begin{pmatrix}
+        \kappa (l - l_t) \frac{1}{4} \\
+        \left(\nu \left( \alpha_t \beta^a_t (1 - f_t) - (1 - \alpha_t) \beta^b_t f_t \right) + (\rho^b - \rho^a) f_t (1 - f_t) \right) \frac{1}{4}
+    \end{pmatrix}
+\end{equation}
+\begin{equation}
+    \sigma(\mathbf{X}_t) = \begin{pmatrix}
+        \sigma_l \frac{1}{2}  \\
+        f_t (1 - f_t) \Delta \frac{1}{2} 
+    \end{pmatrix}
+\end{equation}
+where the expressions for $\beta^i$ is in the paper. Note that typically with two state variables you would have two shocks. This would imply a $2x2$ matrix for the $\sigma\left(X_t\right)$. Given that the two state variables are locally perfectly correlated it is only a vector in our case. For the measurement equations, we use the demand disagreement $DD_t$ and the two year yield $y_{2,t}$. In the model, the demand disagreement is calculate as the cross-sectional standard deviation of the short rate forecast one year ahead. Hence, we have the following system
+\begin{equation}
+    Y_t =  \begin{pmatrix}
+     DD_t\left(X_t\right)  \\
+       y\left(X_t\right)_{2,t} 
+    \end{pmatrix}
+    + \mathbf{u}_t.
+\end{equation}
+Both quantities are calculated using a Monte Carlo simulation with 50,000 paths and quarterly time steps. To estimate the state of our nonlinear system, we implement an Unscented Kalman Filter (UKF) using the \texttt{filterpy} library \cite{filterpy}, specifically employing the \texttt{UnscentedKalmanFilter} class for efficient recursive state estimation. For sigma point generation, we use the \texttt{MerweScaledSigmaPoints} method, which provides a set of points that capture the mean and covariance of the state distribution effectively, even under nonlinear transformations. For the process noise covariance matrix, \( Q \), we assume a diagonal structure with values of 0.01 on the diagonal. For the measurement noise covariance matrix, \( R \), we assume a diagonal structure with values of \( 0.0005 \times \text{Var}(DD_t) \) and \( 0.001 \times \text{Var}(y_{2,t}) \), where \( DD_t \) and \( y_{2,t} \) represent the empirical measure of demand disagreement and the two-year TIPS yield, respectively. The values for $Q$ and $R$ were chosen to  achieve high correlation with the observered measures of $y_{2,t}$ and $DD_t$ and for numerical stability. In the baseline, the correlation between the model implied and observed was $0.8488$ for the demand disagreement and $0.8168$ for the two year real yield.  
+\subsection{A reduced form filtering using macroeconomic disagreement}
+In the filtering in the paper, we use the two year yield and the estimated demand disagreement as the measurement equations to filter the state variables $f_t$ and $l_t$ (or equivalently $\alpha_t$). Our measure of demand disagreement is taking out the macro disagreement from the yield disagreement based on the fact that they should agree on how macroeconomic quantities maps into yields as discussed in Section II in the paper. Here we discuss an alternative approach that is using the yield forecast instead of the measure of demand disagreement as the observation equations. Since the yield forecast do depend on the macro forecasts, we need to explicitly account for this. Yet, in our model there is not notion of macroeconomic disagreement. Hence, we augment our filtering with another measurement equations and introduce another latent variable that we think of as macroeconomic disagreement. Since our model does not have macroeconomic disagreement we need to make additional assumptions. First, we assume that the macroeconomic disagreement does not impact pricing. Hence, the additional latent state variable does not enter into the measurement equation of the two year yield. 
+Second, we measure macro disagreement in two different ways. For the first measure we take the macroeconomic forecasts described in Table 1 in this appendix and in Section II in the paper. For each quantity we calculate the disagreement as the cross-sectional standard deviations. Next, we calculate the first principle component of all the macroeconomic disagreement measures. We label this $PCA_{t}$. This will be our first version of the new measurement equations. For the additional measure, we regress the yield disagreement onto all the macroeconomic disagreement measures. We then use the predicted component as our second version of the measurement equation and label this prediction $Reg_t$. Let $Macro_t$ be the new measurement equations where it is either based on $PCA_{t}$ or $Reg_{t}$
+For augment our measurement equations in the following way
+\begin{equation}
+    Y_t =  \begin{pmatrix}
+     DD_t\left(X_t\right) + \beta_m m_t  \\
+       y\left(X_t\right)_{2,t} \\
+       m_t
+    \end{pmatrix}
+    + \mathbf{u}_t.
+\end{equation}
+where $Y_t$ is the vector of the yield disagreement, two year TIPS rate and $Macro_t$. $m_t$ is the new latent variable capturing the macroeconomic disagreement. Note that we explicitly incorporate $m_t$ is the measurement equation based on the yield disagreement. Here we assume that the yield disagreement is the sum of the model implied demand disagreement $DD_t\left(X_t\right)$ and scaled macro disagreement $\beta_m m_t$. For the dynamics of $m_t$ we assume that it follows an AR(1) process. We base the parameters of $m_t$ on an pre-estimation using $Macro_t$. 
+As the model is very numerically intensive, we cannot easily estimate the parameters. For $\beta_m$ we do this in two stages. When $Macro_t$ is the $PCA_t$ we first regress yield disagreement on $PCA_t$, then use the estimated coefficient as $\beta_m$. When $Macro_t$ is based on the regression, we use $\beta_m = 1$. 
+

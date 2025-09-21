@@ -1,0 +1,133 @@
+\section{Reverse False Consensus Bias}\label{IArevbias}
+
+We study how disagreement about the future prevalence of patient and impatient newborn investors---which leads to demand disagreement---affects asset price. Hence, we need to specify the beliefs of patient and impatient investors. We assumed that both patient and impatient investors overestimate the prevalence of their own type. This assumption serves as a reasonable starting point as it is consistent with a large psychology literature on the false consensus bias which is a cognitive bias whereby people tend to overestimate the extent to which their own opinions, beliefs, preferences, values, and habits are normal and typical of those of others.  %
+
+Reversing the false consensus bias does not lead to a reversal of our main results. While the sign of the market price of demand risk flips when patient investors think they are underrepresented and thus short the consol (see Proposition 3), the exposure of the consol return to the demand shock also flips sign (see Proposition 6). Since the risk premium is determined by the product of these two terms, the overall risk premium remains unaffected (see Proposition 6). Hence, there are no qualitative changes to our results when the sign of the bias is reversed. This symmetry means that the key asset pricing implications are robust to the direction of the bias. 
+
+However, there are minor quantitative differences in the moments of unconditional asset prices because the unconditional joint distribution of the two state variables depends on the sign of the bias. Specifically, with our preferred specification of the false consensus bias, a positive demand shock leads to more newborn impatient investors (higher $\alpha_t$) and an increase in their consumption share (higher $f_t$), amplifying price impact and demand for savings. With the reverse bias, a positive demand shock still increases the prevalence of newborn patient investors (higher $\alpha_t$) and raises the demand for savings, but now it lowers their consumption share (lower $f_t$). This subtle difference leads to slightly different unconditional asset pricing moments. We show unconditional moments of the consumption share, short rate, market price of demand shock risk, nominal bond yields, and nominal bond yield volatility in the tables below below.  For the false consensus bias with disagreement $\Delta = 0.8$, the mean and volatility of the consumption share are higher, the yields are slightly higher, and the yield volatilities are lower compared to reverse false consensus bias with the same amount of disagreement $\Delta = -0.8$.  
+
+
+
+
+\begin{table}[h!]
+\centering
+\caption{\textbf{Unconditional moments of $f$, $r$, and $\theta$ with a false consensus bias:} This table presents the unconditional mean and volatility of the consumption share, the risk-free rate, and the market price of demand risk when there is a false consensus bias. These moments are derived from simulated unconditional distributions of $\tilde{\alpha}$ and $\tilde{f}$ across various demand disagreement levels ($\sigma_{\Delta}$), based on $500,000$ years of monthly model simulations.}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+$\Delta$ & $\mathrm{E}[\tilde{f}]$ & $\mathrm{\sigma}[\tilde{f}]$ & $\mathrm{E}[\tilde{r}]$ & $\mathrm{\sigma}[\tilde{r}]$ 
+& $\mathrm{E}[\tilde{\theta}_{\alpha}]$ & $\mathrm{\sigma}[\tilde{\theta}_{\alpha}]$ \\
+\hline
+0.0   & 0.3344 & 0.0992 & 0.0117 & 0.0052 & -    & -      \\
+0.1   & 0.3334 & 0.1413 & 0.0128 & 0.0073 & 0.0167 & 0.0141 \\
+0.2   & 0.3326 & 0.1863 & 0.0143 & 0.0133 & 0.0335 & 0.0373 \\
+0.3   & 0.3185 & 0.2167 & 0.0162 & 0.0179 & 0.0544 & 0.0650 \\
+0.4   & 0.3173 & 0.2447 & 0.0173 & 0.0213 & 0.0731 & 0.0979 \\
+0.5   & 0.3077 & 0.2623 & 0.0184 & 0.0240 & 0.0961 & 0.1311 \\
+0.6   & 0.2970 & 0.2747 & 0.0194 & 0.0260 & 0.1218 & 0.1648 \\
+0.7   & 0.2946 & 0.2855 & 0.0197 & 0.0277 & 0.1437 & 0.1998 \\
+0.8   & 0.2900 & 0.2940 & 0.0200 & 0.0292 & 0.1680 & 0.2352 \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h!]
+\centering
+\caption{\textbf{Unconditional moments of $f$, $r$, and $\theta$ with reverse false consensus bias:} This table presents the unconditional mean and volatility of the consumption share, the risk-free rate, and the market price of demand risk when there is a reverse false consensus bias. These moments are derived from simulated unconditional distributions of $\tilde{\alpha}$ and $\tilde{f}$ across various demand disagreement levels ($\sigma_{\Delta}$), based on $500,000$ years of monthly model simulations.}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+$\Delta$ & $\mathrm{E}[\tilde{f}]$ & $\mathrm{\sigma}[\tilde{f}]$ & $\mathrm{E}[\tilde{r}]$ & $\mathrm{\sigma}[\tilde{r}]$ 
+& $\mathrm{E}[\tilde{\theta}_{\alpha}]$ & $\mathrm{\sigma}[\tilde{\theta}_{\alpha}]$ \\
+\hline
+0.0    & 0.3344 & 0.0992 & 0.0117 & 0.0052 & -      & -      \\
+-0.1   & 0.3186 & 0.0898 & 0.0124 & 0.0125 & -0.0181  & 0.0090 \\
+-0.2   & 0.2956 & 0.1207 & 0.0140 & 0.0200 & -0.0409  & 0.0241 \\
+-0.3   & 0.2774 & 0.1562 & 0.0155 & 0.0257 & -0.0668  & 0.0468 \\
+-0.4   & 0.2664 & 0.1850 & 0.0164 & 0.0299 & -0.0935  & 0.0740 \\
+-0.5   & 0.2611 & 0.2086 & 0.0170 & 0.0330 & -0.1195  & 0.1043 \\
+-0.6   & 0.2582 & 0.2267 & 0.0172 & 0.0354 & -0.1451  & 0.1360 \\
+-0.7   & 0.2611 & 0.2429 & 0.0164 & 0.0377 & -0.1672  & 0.1700 \\
+-0.8   & 0.2597 & 0.2554 & 0.0168 & 0.0393 & -0.1923 & 0.2043 \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h!]
+\centering
+\caption{\textbf{Unconditional mean of yields with a false consensus bias:} This table presents the unconditional mean of yields with maturities ranging from one two ten years when there is a false consensus bias. These moments are derived from simulated unconditional distributions of $\tilde{\alpha}$ and $\tilde{f}$ across various demand disagreement levels ($\sigma_{\Delta}$), based on $500,000$ years of monthly model simulations.}
+\begin{tabular}{c|ccccccc}
+\hline
+$\Delta$ & Mean y1 & Mean y2 & Mean y3 & Mean y4 & Mean y5 & Mean y7 & Mean y10 \\
+\hline
+0.0 & 0.0117 & 0.0117 & 0.0117 & 0.0117 & 0.0117 & 0.0117 & 0.0117 \\
+0.1 & 0.0128 & 0.0128 & 0.0128 & 0.0128 & 0.0128 & 0.0128 & 0.0128 \\
+0.2 & 0.0143 & 0.0143 & 0.0144 & 0.0144 & 0.0145 & 0.0145 & 0.0146 \\
+0.3 & 0.0163 & 0.0164 & 0.0165 & 0.0166 & 0.0167 & 0.0168 & 0.0170 \\
+0.4 & 0.0174 & 0.0176 & 0.0177 & 0.0178 & 0.0179 & 0.0181 & 0.0184 \\
+0.5 & 0.0186 & 0.0188 & 0.0190 & 0.0191 & 0.0193 & 0.0196 & 0.0199 \\
+0.6 & 0.0196 & 0.0199 & 0.0201 & 0.0203 & 0.0205 & 0.0208 & 0.0212 \\
+0.7 & 0.0200 & 0.0203 & 0.0206 & 0.0208 & 0.0210 & 0.0214 & 0.0219 \\
+0.8 & 0.0204 & 0.0207 & 0.0210 & 0.0213 & 0.0216 & 0.0220 & 0.0225 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{\textbf{Unconditional mean of yields with a reverse false consensus bias:} This table presents the unconditional mean of yields with maturities ranging from one two ten years when there is a reverse false consensus bias. These moments are derived from simulated unconditional distributions of $\tilde{\alpha}$ and $\tilde{f}$ across various demand disagreement levels ($\sigma_{\Delta}$), based on $500,000$ years of monthly model simulations.}
+\begin{tabular}{c|ccccccc}
+\hline
+$\Delta$ & Mean y1 & Mean y2 & Mean y3 & Mean y4 & Mean y5 & Mean y7 & Mean y10 \\
+\hline
+0.0  & 0.0117 & 0.0117 & 0.0117 & 0.0117 & 0.0117 & 0.0117 & 0.0117 \\
+-0.1 & 0.0124 & 0.0125 & 0.0125 & 0.0125 & 0.0125 & 0.0125 & 0.0125 \\
+-0.2 & 0.0141 & 0.0142 & 0.0143 & 0.0144 & 0.0144 & 0.0145 & 0.0145 \\
+-0.3 & 0.0157 & 0.0158 & 0.0160 & 0.0161 & 0.0162 & 0.0164 & 0.0165 \\
+-0.4 & 0.0167 & 0.0170 & 0.0172 & 0.0173 & 0.0175 & 0.0177 & 0.0180 \\
+-0.5 & 0.0173 & 0.0176 & 0.0179 & 0.0181 & 0.0183 & 0.0186 & 0.0190 \\
+-0.6 & 0.0176 & 0.0180 & 0.0183 & 0.0186 & 0.0188 & 0.0192 & 0.0196 \\
+-0.7 & 0.0169 & 0.0173 & 0.0177 & 0.0180 & 0.0183 & 0.0188 & 0.0193 \\
+-0.8 & 0.0173 & 0.0178 & 0.0181 & 0.0185 & 0.0188 & 0.0193 & 0.0199 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{\textbf{Unconditional volatility of yields with a false consensus bias:} This table presents the unconditional volatility of yields with maturities ranging from one two ten years when there is a false consensus bias. These moments are derived from simulated unconditional distributions of $\tilde{\alpha}$ and $\tilde{f}$ across various demand disagreement levels ($\sigma_{\Delta}$), based on $500,000$ years of monthly model simulations.}
+\begin{tabular}{c|ccccccc}
+\hline
+$\Delta$ & Std Y1 & Std Y2 & Std Y3 & Std Y4 & Std Y5 & Std Y7 & Std Y10 \\
+\hline
+0.0 & 0.0051 & 0.0050 & 0.0049 & 0.0048 & 0.0047 & 0.0045 & 0.0043 \\
+0.1 & 0.0073 & 0.0073 & 0.0072 & 0.0072 & 0.0072 & 0.0071 & 0.0070 \\
+0.2 & 0.0132 & 0.0130 & 0.0129 & 0.0127 & 0.0126 & 0.0123 & 0.0119 \\
+0.3 & 0.0176 & 0.0174 & 0.0171 & 0.0169 & 0.0166 & 0.0162 & 0.0156 \\
+0.4 & 0.0209 & 0.0206 & 0.0202 & 0.0199 & 0.0196 & 0.0190 & 0.0182 \\
+0.5 & 0.0235 & 0.0230 & 0.0226 & 0.0222 & 0.0218 & 0.0211 & 0.0201 \\
+0.6 & 0.0255 & 0.0249 & 0.0244 & 0.0239 & 0.0234 & 0.0226 & 0.0215 \\
+0.7 & 0.0271 & 0.0264 & 0.0258 & 0.0252 & 0.0247 & 0.0237 & 0.0225 \\
+0.8 & 0.0285 & 0.0277 & 0.0270 & 0.0264 & 0.0258 & 0.0247 & 0.0234 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{\textbf{Unconditional volatility of yields with a false consensus bias:} This table presents the unconditional volatility of yields with maturities ranging from one two ten years when there is a reverse false consensus bias. These moments are derived from simulated unconditional distributions of $\tilde{\alpha}$ and $\tilde{f}$ across various demand disagreement levels ($\sigma_{\Delta}$), based on $500,000$ years of monthly model simulations.}
+\begin{tabular}{c|ccccccc}
+\hline
+$\Delta$ & Std Y1 & Std Y2 & Std Y3 & Std Y4 & Std Y5 & Std Y7 & Std Y10 \\
+\hline
+0.0   & 0.0051 & 0.0050 & 0.0049 & 0.0048 & 0.0047 & 0.0045 & 0.0043 \\
+-0.1  & 0.0122 & 0.0119 & 0.0116 & 0.0113 & 0.0110 & 0.0104 & 0.0097 \\
+-0.2  & 0.0195 & 0.0190 & 0.0185 & 0.0181 & 0.0177 & 0.0169 & 0.0158 \\
+-0.3  & 0.0250 & 0.0243 & 0.0237 & 0.0232 & 0.0227 & 0.0217 & 0.0204 \\
+-0.4  & 0.0290 & 0.0283 & 0.0275 & 0.0269 & 0.0263 & 0.0252 & 0.0237 \\
+-0.5  & 0.0321 & 0.0312 & 0.0304 & 0.0297 & 0.0290 & 0.0278 & 0.0262 \\
+-0.6  & 0.0344 & 0.0334 & 0.0325 & 0.0317 & 0.0310 & 0.0297 & 0.0280 \\
+-0.7  & 0.0365 & 0.0355 & 0.0345 & 0.0336 & 0.0328 & 0.0314 & 0.0297 \\
+-0.8  & 0.0380 & 0.0369 & 0.0359 & 0.0350 & 0.0342 & 0.0327 & 0.0309 \\
+\hline
+\end{tabular}
+\end{table} 
+
+
+

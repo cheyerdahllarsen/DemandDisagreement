@@ -1,0 +1,548 @@
+\section{Empirical Results}\label{IAempirics}
+In this section we present some additional results and robustness checks. 
+\subsection{Disagreement Spanning Regressions}
+In the main text we report the $R^2$ from the disagreement spanning regressions. Here we include information on the coefficients and t-stat for the regressions. 
+
+\begin{table}[H]
+\centering
+\caption{Definitions of Variables from the Survey of Professional Forecasters}
+\begin{tabular}{p{2.5cm} p{10cm}}
+\hline
+\hline
+\textbf{Variable} & \textbf{Definition} \\
+\hline
+BOND & Forecasts for the quarterly average and annual-average level of Moody’s Aaa corporate bond yield. \\
+CPI & Consumer Price Index, measuring the average change over time in prices paid by urban consumers for a market basket of goods and services. \\
+HOUSING & Housing starts, representing the number of new residential construction projects begun during a specific period. \\
+UNEMP & Unemployment rate, indicating the percentage of the labor force that is jobless and actively seeking employment. \\
+gCPROF & Forecasted growth rate of corporate profits. \\
+gRCONSUM & Forecasted growth rate of real personal consumption expenditures, reflecting consumer spending adjusted for inflation. \\
+gRFEDGOV & Forecasted growth rate of real federal government consumption expenditures and gross investment, adjusted for inflation. \\
+gRGDP & Forecasted growth rate of real Gross Domestic Product, measuring the value of economic output adjusted for inflation. \\
+gRNRESIN & Forecasted growth rate of real nonresidential fixed investment, indicating business investments in structures, equipment, and software, adjusted for inflation. \\
+gRRESINV & Forecasted growth rate of real residential fixed investment, representing investments in residential structures, adjusted for inflation. \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+
+\subsubsection{Baseline regressions}
+\begin{table}[H]
+\centering
+\caption{Regression Results: Level Specifications}
+\begin{tabular}{@{\extracolsep{5pt}}lcccc}
+\hline
+\hline
+& (1) & (2) & (3) & (4) \\
+\hline
+BOND & 0.659$^{***}$ & 0.984$^{***}$ & 0.934$^{***}$ & 0.827$^{***}$ \\
+     & (0.099) & (0.090) & (0.082) & (0.085) \\
+
+CPI  & 0.016 & -0.016 & 0.116$^{**}$ & 0.200$^{***}$ \\
+     & (0.032) & (0.039) & (0.047) & (0.062) \\
+
+HOUSING & -0.087 & -0.168 & -0.657 & -1.256$^{**}$ \\
+        & (0.598) & (0.523) & (0.508) & (0.533) \\
+
+UNEMP & -0.406$^{***}$ & -0.467$^{***}$ & -0.335$^{***}$ & -0.229$^{**}$ \\
+      & (0.080) & (0.080) & (0.080) & (0.089) \\
+
+gCPROF & -0.013 & 0.462$^{*}$ & 1.339$^{***}$ & 2.352$^{***}$ \\
+       & (0.178) & (0.268) & (0.412) & (0.666) \\
+
+gRCONSUM & 3.734$^{**}$ & 3.143 & -0.613 & -4.935 \\
+         & (1.743) & (2.691) & (2.874) & (3.585) \\
+
+gRFEDGOV & 0.837 & -1.622$^{*}$ & -4.013$^{***}$ & -4.942$^{***}$ \\
+         & (0.679) & (0.956) & (1.283) & (1.812) \\
+
+gRGDP & 3.781 & 8.966$^{*}$ & 7.198 & 6.659 \\
+      & (2.386) & (4.903) & (5.929) & (7.383) \\
+
+gRNRESIN & 1.024 & -0.123 & 1.630 & 1.830 \\
+         & (0.785) & (1.220) & (1.389) & (1.931) \\
+
+gRRESINV & 0.868$^{*}$ & 0.650 & -0.624 & 0.820 \\
+         & (0.440) & (0.617) & (0.844) & (1.160) \\
+
+Intercept & -0.091$^{**}$ & -0.057 & -0.002 & 0.023 \\
+          & (0.039) & (0.039) & (0.042) & (0.048) \\
+
+\hline
+Observations & 173 & 173 & 173 & 173 \\
+$R^2$ & 0.719 & 0.769 & 0.765 & 0.743 \\
+Residual Std. Error & 0.129 (df=162) & 0.130 (df=162) & 0.141 (df=162) & 0.170 (df=162) \\
+F Statistic & 41.359$^{***}$ & 53.858$^{***}$ & 52.735$^{***}$ & 46.886$^{***}$ \\
+            & (df=10; 162) & (df=10; 162) & (df=10; 162) & (df=10; 162) \\
+\hline
+\hline
+\multicolumn{5}{l}{\textit{Note:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\caption{Regression Results: Change Specifications}
+\begin{tabular}{@{\extracolsep{5pt}}lcccc}
+\hline
+\hline
+& (1) & (2) & (3) & (4) \\
+\hline
+Intercept & -0.002 & -0.004 & -0.005 & -0.005 \\
+          & (0.009) & (0.009) & (0.010) & (0.012) \\
+
+$\Delta$BOND & 0.157$^{*}$ & 0.419$^{***}$ & 0.395$^{***}$ & 0.386$^{***}$ \\
+             & (0.089) & (0.093) & (0.094) & (0.089) \\
+
+$\Delta$CPI & 0.053 & 0.051 & 0.093$^{***}$ & 0.074 \\
+            & (0.035) & (0.034) & (0.033) & (0.046) \\
+
+$\Delta$HOUSING & -0.185 & -0.044 & 0.574 & 0.927$^{*}$ \\
+                & (0.538) & (0.466) & (0.498) & (0.550) \\
+
+$\Delta$UNEMP & -0.267$^{***}$ & -0.165$^{**}$ & -0.155$^{**}$ & -0.096 \\
+              & (0.065) & (0.070) & (0.073) & (0.082) \\
+
+$\Delta$gCPROF & -0.039 & -0.279 & 0.502 & 0.559 \\
+               & (0.139) & (0.219) & (0.360) & (0.618) \\
+
+$\Delta$gRCONSUM & 3.237$^{**}$ & 4.586$^{**}$ & 1.491 & -2.715 \\
+                 & (1.323) & (1.850) & (1.882) & (2.257) \\
+
+$\Delta$gRFEDGOV & 1.950$^{***}$ & -1.234 & -3.880$^{***}$ & -7.014$^{***}$ \\
+                 & (0.537) & (0.806) & (1.067) & (1.558) \\
+
+$\Delta$gRGDP & 2.985$^{*}$ & -0.883 & 2.467 & 6.442 \\
+              & (1.804) & (3.437) & (4.089) & (4.965) \\
+
+$\Delta$gRNRESIN & 1.150$^{*}$ & -1.192 & -0.744 & 0.863 \\
+                 & (0.601) & (1.185) & (1.297) & (1.784) \\
+
+$\Delta$gRRESINV & 0.721 & 1.178$^{*}$ & 0.311 & 0.034 \\
+                 & (0.496) & (0.671) & (0.835) & (1.136) \\
+
+\hline
+Observations & 172 & 172 & 172 & 172 \\
+$R^2$ & 0.318 & 0.224 & 0.217 & 0.240 \\
+Residual Std. Error & 0.122 (df=161) & 0.115 (df=161) & 0.126 (df=161) & 0.152 (df=161) \\
+F Statistic & 7.507$^{***}$ & 4.642$^{***}$ & 4.470$^{***}$ & 5.074$^{***}$ \\
+            & (df=10; 161) & (df=10; 161) & (df=10; 161) & (df=10; 161) \\
+\hline
+\hline
+\multicolumn{5}{l}{\textit{Note:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Regression Results: Log Specifications}
+\begin{tabular}{@{\extracolsep{5pt}}lcccc}
+\hline
+\hline
+& (1) & (2) & (3) & (4) \\
+\hline
+Intercept & 1.455$^{***}$ & 0.710 & -0.943 & -0.953$^{*}$ \\
+          & (0.539) & (0.610) & (0.573) & (0.517) \\
+
+log BOND & 0.850$^{***}$ & 1.323$^{***}$ & 1.200$^{***}$ & 0.859$^{***}$ \\
+               & (0.151) & (0.157) & (0.138) & (0.122) \\
+
+log CPI & -0.047 & -0.037 & 0.275$^{**}$ & 0.427$^{***}$ \\
+              & (0.119) & (0.125) & (0.117) & (0.110) \\
+
+log HOUSING & 0.101 & -0.117 & -0.340$^{**}$ & -0.455$^{***}$ \\
+                  & (0.174) & (0.165) & (0.145) & (0.119) \\
+
+log UNEMP & -0.768$^{***}$ & -0.663$^{***}$ & -0.339$^{***}$ & -0.165 \\
+                & (0.139) & (0.135) & (0.115) & (0.103) \\
+
+log gCPROF & 0.125 & 0.208$^{*}$ & 0.294$^{***}$ & 0.301$^{***}$ \\
+                 & (0.100) & (0.109) & (0.098) & (0.091) \\
+
+log gRCONSUM & 0.070 & 0.030 & -0.042 & -0.087 \\
+                   & (0.119) & (0.141) & (0.112) & (0.094) \\
+
+log gRFEDGOV & 0.079 & -0.174$^{*}$ & -0.215$^{**}$ & -0.263$^{***}$ \\
+                   & (0.104) & (0.102) & (0.091) & (0.081) \\
+
+log gRGDP & 0.320$^{**}$ & 0.269 & 0.034 & 0.047 \\
+                & (0.160) & (0.198) & (0.160) & (0.134) \\
+
+log gRNRESIN & 0.415$^{***}$ & 0.501$^{***}$ & 0.361$^{***}$ & 0.256$^{**}$ \\
+                   & (0.137) & (0.149) & (0.129) & (0.119) \\
+
+log gRRESINV & -0.250$^{*}$ & -0.388$^{***}$ & -0.342$^{**}$ & -0.106 \\
+                   & (0.139) & (0.143) & (0.132) & (0.116) \\
+
+\hline
+Observations & 173 & 173 & 173 & 173 \\
+$R^2$ & 0.497 & 0.553 & 0.604 & 0.627 \\
+Residual Std. Error & 0.524 (df=162) & 0.470 (df=162) & 0.395 (df=162) & 0.339 (df=162) \\
+F Statistic & 15.984$^{***}$ & 20.030$^{***}$ & 24.724$^{***}$ & 27.288$^{***}$ \\
+            & (df=10; 162) & (df=10; 162) & (df=10; 162) & (df=10; 162) \\
+\hline
+\hline
+\multicolumn{5}{l}{\textit{Note:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}
+\subsubsection{Regressions without BOND}
+\begin{table}[H]
+\centering
+\caption{Regression Results: Level Specifications}
+\begin{tabular}{@{\extracolsep{5pt}}lcccc}
+\hline
+\hline
+& (1) & (2) & (3) & (4) \\
+\hline
+CPI & 0.089$^{***}$ & 0.127$^{***}$ & 0.292$^{***}$ & 0.400$^{***}$ \\
+         & (0.034) & (0.048) & (0.059) & (0.073) \\
+
+HOUSING & -0.029 & -0.065 & -0.081 & -0.363 \\
+             & (0.673) & (0.687) & (0.677) & (0.660) \\
+
+UNEMP & -0.546$^{***}$ & -0.697$^{***}$ & -0.606$^{***}$ & -0.539$^{***}$ \\
+           & (0.087) & (0.102) & (0.103) & (0.104) \\
+
+gCPROF & 0.197 & 0.806$^{**}$ & 1.969$^{***}$ & 3.377$^{***}$ \\
+            & (0.198) & (0.349) & (0.547) & (0.827) \\
+
+gRCONSUM & 2.619 & -3.398 & -6.903$^{*}$ & -12.666$^{***}$ \\
+              & (1.953) & (3.446) & (3.775) & (4.394) \\
+
+gRFEDGOV & 1.860$^{**}$ & 1.133 & -1.993 & -3.791$^{*}$ \\
+              & (0.744) & (1.211) & (1.701) & (2.273) \\
+
+gRGDP & 9.973$^{***}$ & 30.539$^{***}$ & 25.099$^{***}$ & 29.914$^{***}$ \\
+           & (2.473) & (5.895) & (7.652) & (8.784) \\
+
+gRNRESIN & 1.402 & -0.593 & 5.736$^{***}$ & 7.475$^{***}$ \\
+              & (0.881) & (1.601) & (1.796) & (2.316) \\
+
+gRRESINV & 1.668$^{***}$ & 2.760$^{***}$ & 0.605 & 0.340 \\
+              & (0.476) & (0.770) & (1.121) & (1.456) \\
+
+Intercept & -0.062 & 0.001 & 0.033 & 0.048 \\
+          & (0.044) & (0.051) & (0.056) & (0.060) \\
+
+\hline
+Observations & 173 & 173 & 173 & 173 \\
+$R^2$ & 0.641 & 0.598 & 0.576 & 0.592 \\
+Residual Std. Error & 0.145 (df=163) & 0.170 (df=163) & 0.188 (df=163) & 0.214 (df=163) \\
+F Statistic & 32.392$^{***}$ & 26.997$^{***}$ & 24.653$^{***}$ & 26.265$^{***}$ \\
+            & (df=9; 163) & (df=9; 163) & (df=9; 163) & (df=9; 163) \\
+\hline
+\hline
+\multicolumn{5}{l}{\textit{Note:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Regression Results: Changes}
+\begin{tabular}{@{\extracolsep{5pt}}lcccc}
+\hline
+\hline
+& (1) & (2) & (3) & (4) \\
+\hline
+Intercept & -0.003 & -0.005 & -0.007 & -0.008 \\
+          & (0.009) & (0.009) & (0.010) & (0.012) \\
+
+$\Delta$CPI & 0.070$^{**}$ & 0.100$^{***}$ & 0.126$^{***}$ & 0.084$^{*}$ \\
+            & (0.034) & (0.035) & (0.034) & (0.048) \\
+
+$\Delta$HOUSING & -0.252 & -0.345 & 0.302 & 0.925 \\
+                & (0.540) & (0.488) & (0.518) & (0.580) \\
+
+$\Delta$UNEMP & -0.259$^{***}$ & -0.113 & -0.107 & -0.126 \\
+              & (0.065) & (0.073) & (0.076) & (0.086) \\
+
+$\Delta$gCPROF & 0.003 & -0.216 & 0.590 & 0.520 \\
+               & (0.138) & (0.231) & (0.378) & (0.651) \\
+
+$\Delta$gRCONSUM & 2.930$^{**}$ & 3.100 & -0.719 & -4.603$^{*}$ \\
+                 & (1.320) & (1.927) & (1.896) & (2.333) \\
+
+$\Delta$gRFEDGOV & 2.114$^{***}$ & -0.215 & -2.760$^{**}$ & -7.013$^{***}$ \\
+                 & (0.532) & (0.819) & (1.084) & (1.641) \\
+
+$\Delta$gRGDP & 3.520$^{*}$ & 1.014 & 3.068 & 10.769$^{**}$ \\
+              & (1.790) & (3.611) & (4.290) & (5.124) \\
+
+$\Delta$gRNRESIN & 1.152$^{*}$ & -0.997 & 0.402 & 3.410$^{*}$ \\
+                 & (0.605) & (1.254) & (1.331) & (1.775) \\
+
+$\Delta$gRRESINV & 0.692 & 1.285$^{*}$ & 0.919 & -0.123 \\
+                 & (0.499) & (0.710) & (0.863) & (1.196) \\
+
+\hline
+Observations & 172 & 172 & 172 & 172 \\
+$R^2$ & 0.305 & 0.125 & 0.132 & 0.151 \\
+Residual Std. Error & 0.123 (df=162) & 0.122 (df=162) & 0.132 (df=162) & 0.160 (df=162) \\
+F Statistic & 7.889$^{***}$ & 2.574$^{***}$ & 2.737$^{***}$ & 3.197$^{***}$ \\
+            & (df=9; 162) & (df=9; 162) & (df=9; 162) & (df=9; 162) \\
+\hline
+\hline
+\multicolumn{5}{l}{\textit{Note:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Regression Results: Log Specifications}
+\begin{tabular}{@{\extracolsep{5pt}}lcccc}
+\hline
+\hline
+& (1) & (2) & (3) & (4) \\
+\hline
+Intercept & 2.454$^{***}$ & 2.589$^{***}$ & 0.748 & 0.295 \\
+          & (0.554) & (0.680) & (0.651) & (0.553) \\
+
+log CPI & 0.155 & 0.293$^{**}$ & 0.627$^{***}$ & 0.757$^{***}$ \\
+              & (0.124) & (0.142) & (0.133) & (0.113) \\
+
+log HOUSING & 0.150 & -0.071 & -0.319$^{*}$ & -0.400$^{***}$ \\
+                  & (0.189) & (0.197) & (0.176) & (0.135) \\
+
+log UNEMP & -0.872$^{***}$ & -0.795$^{***}$ & -0.511$^{***}$ & -0.306$^{***}$ \\
+                & (0.150) & (0.160) & (0.137) & (0.116) \\
+
+log gCPROF & 0.160 & 0.330$^{**}$ & 0.428$^{***}$ & 0.403$^{***}$ \\
+                 & (0.108) & (0.129) & (0.117) & (0.102) \\
+
+log gRCONSUM & -0.006 & -0.066 & -0.132 & -0.128 \\
+                   & (0.129) & (0.168) & (0.135) & (0.107) \\
+
+log gRFEDGOV & 0.160 & -0.020 & -0.183$^{*}$ & -0.267$^{***}$ \\
+                   & (0.112) & (0.120) & (0.110) & (0.093) \\
+
+log gRGDP & 0.635$^{***}$ & 0.672$^{***}$ & 0.354$^{*}$ & 0.278$^{*}$ \\
+                & (0.163) & (0.230) & (0.188) & (0.148) \\
+
+log gRNRESIN & 0.446$^{***}$ & 0.487$^{***}$ & 0.467$^{***}$ & 0.369$^{***}$ \\
+                   & (0.149) & (0.178) & (0.155) & (0.135) \\
+
+log gRRESINV & -0.139 & -0.175 & -0.167 & -0.099 \\
+                   & (0.150) & (0.169) & (0.157) & (0.132) \\
+
+\hline
+Observations & 173 & 173 & 173 & 173 \\
+$R^2$ & 0.398 & 0.356 & 0.419 & 0.513 \\
+Residual Std. Error & 0.571 (df=163) & 0.562 (df=163) & 0.477 (df=163) & 0.386 (df=163) \\
+F Statistic & 11.994$^{***}$ & 10.031$^{***}$ & 13.072$^{***}$ & 19.071$^{***}$ \\
+            & (df=9; 163) & (df=9; 163) & (df=9; 163) & (df=9; 163) \\
+\hline
+\hline
+\multicolumn{5}{l}{\textit{Note:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}
+
+\subsection{Disagreement and volatility regressions.}
+In this subsection we consider alternative specifications for the volatility regressions. 
+\begin{table}[H]
+\centering
+\caption{\textbf{Yield Volatility regressions} The table shows the standardized regression coefficients, t-statistics and $R^2$ for yield maturities between one and five years. The yield volatility is estimated using an AR(1)-GARCH(1,1) model. The model coefficient is the population values based on 500K years of monthly data. In the model we use the conditional volatility based on the diffusion coefficients of the yields. In the model, Disagreement is measured as the cross-sectional standard deviation of the beliefs about the short interest rate on year ahead. In the data, we use three different measures of the demand disagreement. The baseline is based on the cross-sectional standard deviation of the pooled regression of yield forecasts on macroeconomic forecasts. The Log disagreement measure is based on regressing the log cross-sectional standard deviation of the one year ahead forecast of the interest rate (interest rate disagreement) onto the log cross-sectional standard deviation of all the macroeconomic variables we discuss in the paper. The exponential of the residual is used as the demand disagreement. The level disagreement is similar, but instead of using the log disagreement we use the actual level. Note that this can be negative in it's raw form. The final disagreement we use it the interest rate disagreement directly (T-bill). The coefficients are standardized and the t-statistic are Newey-West corrected with 4 lags. T-statistics in the data are reported in brackets.}
+\begin{tabular}{lccccc}
+\hline
+\hline
+& \multicolumn{5}{c}{Maturity} \\
+& 1 & 2 & 3 & 4 & 5 \\
+\hline
+\textbf{Model} \\
+Coefficient & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 \\
+\hline
+\textbf{Baseline} \\
+Coefficient & 0.73 & 0.73 & 0.72 & 0.70 & 0.66 \\
+t-stat & 14.11 & 13.90 & 13.58 & 12.74 & 11.54 \\
+$R^2$ & 0.54 & 0.53 & 0.52 & 0.49 & 0.44 \\
+\hline
+\textbf{Log Disagreement} \\
+Coefficient & 0.23 & 0.22 & 0.19 & 0.16 & 0.12 \\
+t-stat & 3.08 & 2.93 & 2.56 & 2.06 & 1.55 \\
+$R^2$ & 0.05 & 0.05 & 0.04 & 0.02 & 0.01 \\
+\hline
+\textbf{Level Disagreement} \\
+Coefficient & 0.19 & 0.18 & 0.16 & 0.12 & 0.08 \\
+t-stat & 2.53 & 2.38 & 2.07 & 1.60 & 1.10 \\
+$R^2$ & 0.04 & 0.03 & 0.02 & 0.02 & 0.01 \\
+\hline
+\textbf{T-Bill Disagreement} \\
+Coefficient & 0.76 & 0.77 & 0.77 & 0.76 & 0.75 \\
+t-stat & 15.42 & 15.74 & 15.84 & 15.46 & 14.71 \\
+$R^2$ & 0.58 & 0.59 & 0.60 & 0.58 & 0.56 \\
+\hline
+\hline
+\end{tabular}
+\label{table:Vola2Dis}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Yield Volatility regressions including yields.} The table shows the standardized regression coefficients, t-statistics and $R^2$ for yield maturities between one and five years. The yield volatility is estimated using an AR(1)-GARCH(1,1) model. Disagreement is based on the cross-sectional standard deviation of the pooled regression of yield forecasts on macroeconomic forecasts.}
+\begin{tabular}{lccccc}
+\hline
+\hline
+& \multicolumn{5}{c}{Maturity} \\
+& 1 & 2 & 3 & 4 & 5 \\
+\hline
+\textbf{DIS} & 0.49 (9.01) & 0.43 (8.41) & 0.39 (7.94) & 0.33 (6.99) & 0.26 (5.63) \\
+\textbf{Y1} & 2.20 (0.36) & 3.26 (0.57) & 2.20 (0.40) & 1.62 (0.30) & 1.25 (0.24) \\
+\textbf{Y2} & -5.45 (-0.15) & -20.50 (-0.58) & -17.87 (-0.53) & -15.32 (-0.47) & -11.15 (-0.35) \\
+\textbf{Y3} & -1.68 (-0.02) & 48.27 (0.60) & 52.16 (0.67) & 49.74 (0.66) & 37.16 (0.50) \\
+\textbf{Y4} & 11.64 (0.14) & -50.42 (-0.63) & -63.50 (-0.83) & -64.85 (-0.87) & -50.52 (-0.69) \\
+\textbf{Y5} & -6.25 (-0.21) & 19.92 (0.69) & 27.60 (1.00) & 29.45 (1.10) & 23.97 (0.91) \\
+\hline
+\textbf{$R^2$} & 0.69 & 0.72 & 0.74 & 0.76 & 0.77 \\
+\hline
+\hline
+\end{tabular}
+\label{table:Vola2Dis_Yields}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Yield Volatility regressions including macroeconomic disagreement.} The table shows the standardized regression coefficients, t-statistics and $R^2$ for yield maturities between one and five years. The yield volatility is estimated using an AR(1)-GARCH(1,1) model. We use two measures of disagreement, DD and MD. DD is our baseline where disagreement is based on the cross-sectional standard deviation of the pooled regression of yield forecasts on macroeconomic forecasts. The MD is the macroeconomic disagreement. Here we use the predicted yield forecasts based on the pooled regressions. Next, we calculate the cross-sectional standard deviation of the predicted forecasts period by period.}
+\begin{tabular}{lccccc}
+\hline
+\hline& 
+\multicolumn{5}{c}{Maturity} \\
+ &  1 &  2 &  3 &  4 &  5 \\
+\hline
+DD      & 0.42 (6.20) & 0.42 (6.05) & 0.39 (5.66) & 0.33 (4.76) & 0.25 (3.55) \\
+MD  & 0.43 (6.27) & 0.43 (6.25) & 0.46 (6.61) & 0.50 (7.22) & 0.56 (7.88) \\
+$R^2$          & 0.63        & 0.62        & 0.62        & 0.61        & 0.59        \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Yield Volatility regressions including macroeconomic disagreement and yields.} The table shows the standardized regression coefficients, t-statistics and $R^2$ for yield maturities between one and five years. The yield volatility is estimated using an AR(1)-GARCH(1,1) model. We use two measures of disagreement, DD and MD. DD is our baseline where disagreement is based on the cross-sectional standard deviation of the pooled regression of yield forecasts on macroeconomic forecasts. The MD is the macroeconomic disagreement. Here we use the predicted yield forecasts based on the pooled regressions. Next, we calculate the cross-sectional standard deviation of the predicted forecasts period by period.}
+\begin{tabular}{lccccc}
+\hline
+\hline
+& \multicolumn{5}{c}{Maturity} \\
+ & 1 &  2 & 3 &  4 & 5 \\
+\hline
+DD  & 0.34 (5.13) & 0.30 (4.75) & 0.26 (4.24) & 0.18 (3.17) & 0.10 (1.72) \\
+MD & 0.26 (3.49) & 0.23 (3.27) & 0.24 (3.53) & 0.27 (4.12) & 0.30 (4.77) \\
+Y1 & 10.55 (1.66) & 10.72 (1.77) & 9.87 (1.71) & 10.17 (1.85) & 10.84 (2.03) \\
+Y2 & -55.86 (-1.43) & -65.54 (-1.77) & -64.22 (-1.81) & -66.92 (-1.98) & -69.11 (-2.11) \\
+Y3 & 109.54 (1.23) & 147.64 (1.75) & 154.41 (1.92) & 163.60 (2.13) & 165.02 (2.21) \\
+Y4 & -94.21 (-1.08) & -145.00 (-1.74) & -160.81 (-2.03) & -173.22 (-2.29) & -172.20 (-2.35) \\
+Y5 & 30.36 (0.97) & 52.63 (1.77) & 61.25 (2.16) & 66.93 (2.47) & 66.05 (2.52) \\
+$R^2$ & 0.71 & 0.74 & 0.76 & 0.78 & 0.80 \\
+\hline
+\end{tabular}
+\label{table:Vola2Dis_YieldsMD}
+\end{table}
+
+
+\subsection{Disagreement and bond risk premia regressions}
+In this subsection we consider alternative specifications for the bond risk premia regressions. 
+\begin{table}[H]
+\centering
+\caption{\textbf{Bond risk premia regressions.} In the data we run the regressions 
+$rx_{\tau,t+4} = a + b DIS_t + \epsilon_{\tau,t+4}$, where $DIS_t$ is the implied demand disagreement and the excess return on the bond with maturity $\tau$ is calculated as $rx_{\tau,t+4} = \tau y_{\tau,t} - \left(\tau-4\right)y_{\tau-4,t+4} - y_{1,t}$ where each period is a quarter. In the model, we use the theoretical risk premia, $\lambda_{B_{tau},t}$, and regress it on the model implied demand disagreement. The coefficients are standardized and the t-statistic are Newey-West corrected with 4 lags. T-statistics in the data are reported in brackets.}
+\begin{tabular}{lcccc}
+\hline
+\hline
+& \multicolumn{4}{c}{Maturity} \\
+& 2 & 3 & 4 & 5 \\
+\hline
+\textbf{Model} \\
+Coefficient & 0.15 & 0.15 & 0.15 & 0.15 \\
+\hline
+\textbf{Data Baseline} \\
+Coefficient & 0.44 & 0.41 & 0.39 & 0.38 \\
+t-stat & 5.85 & 5.36 & 5.08 & 4.92 \\
+$R^2$ & 0.19 & 0.17 & 0.16 & 0.15 \\
+\hline
+\textbf{Log Disagreement} \\
+Coefficient & 0.41 & 0.42 & 0.43 & 0.42 \\
+t-stat & 4.04 & 4.23 & 4.31 & 4.30 \\
+$R^2$ & 0.17 & 0.18 & 0.18 & 0.18 \\
+\hline
+\textbf{Level Disagreement} \\
+Coefficient & 0.42 & 0.43 & 0.43 & 0.43 \\
+t-stat & 5.11 & 5.40 & 5.42 & 5.35 \\
+$R^2$ & 0.17 & 0.18 & 0.18 & 0.18 \\
+\hline
+\textbf{T-Bill Disagreement} \\
+Coefficient & 0.46 & 0.42 & 0.41 & 0.40 \\
+t-stat & 5.29 & 4.71 & 4.44 & 4.29 \\
+$R^2$ & 0.21 & 0.18 & 0.17 & 0.16 \\
+\hline
+\hline
+\end{tabular}
+\label{table:rx2Dis}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Bond risk premia regressions including the yields.} We run the regressions 
+$rx_{\tau,t+4} = a + b DIS_t + c'Y_t \epsilon_{\tau,t+4}$, where $DIS_t$ is the implied demand disagreement, $Y_t=\left(Y_{1,t},\ldots,Y_{5,t}\right)$ is the vector of the five yields and the excess return on the bond with maturity $\tau$ is calculated as $rx_{\tau,t+4} = \tau y_{\tau,t} - \left(\tau-4\right)y_{\tau-4,t+4} - y_{1,t}$ where each period is a quarter. The coefficients are standardized and the t-statistic are Newey-West corrected with 4 lags. T-statistics in the data are reported in brackets.}
+\begin{tabular}{lcccc}
+\hline
+\hline
+& \multicolumn{4}{c}{Maturity} \\
+& 2 & 3 & 4 & 5 \\
+\hline
+\textbf{DIS} & 0.21 (2.39) & 0.22 (2.55) & 0.23 (2.71) & 0.23 (2.82) \\
+\textbf{Y1} & -0.08 (-0.01) & -2.29 (-0.18) & -4.41 (-0.34) & -6.42 (-0.51) \\
+\textbf{Y2} & 23.41 (0.29) & 30.10 (0.35) & 38.88 (0.46) & 47.93 (0.57) \\
+\textbf{Y3} & -74.58 (-0.39) & -82.76 (-0.41) & -98.00 (-0.49) & -114.36 (-0.58) \\
+\textbf{Y4} & 76.53 (0.40) & 81.02 (0.40) & 93.11 (0.46) & 106.15 (0.53) \\
+\textbf{Y5} & -24.87 (-0.36) & -25.74 (-0.35) & -29.30 (-0.40) & -33.07 (-0.46) \\
+\hline
+\textbf{$R^2$} & 0.33 & 0.27 & 0.25 & 0.24 \\
+\hline
+\hline
+\end{tabular}
+\label{table:rx2Dis_YLD}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Bond risk premia regressions including macroeconomic disagreement.} We run the regressions 
+$rx_{\tau,t+4} = a + b_1 DD_t + b_2 MD_t +  \epsilon_{\tau,t+4}$, where $DD_t$ is the implied demand disagreement, $MD_t$ is the implied macroeconomic disagreement and the excess return on the bond with maturity $\tau$ is calculated as $rx_{\tau,t+4} = \tau y_{\tau,t} - \left(\tau-4\right)y_{\tau-4,t+4} - y_{1,t}$ where each period is a quarter. The coefficients are standardized and the t-statistic are Newey-West corrected with 4 lags. T-statistics in the data are reported in brackets.}
+\begin{tabular}{lcccc}
+\hline
+\hline
+& \multicolumn{4}{c}{Maturity} \\
+ &  2 & 3 &  4 & 5 \\
+\hline
+DD       & 0.39 (3.08) & 0.39 (3.00) & 0.40 (3.01) & 0.40 (3.04) \\
+MD  & 0.07 (0.44) & 0.02 (0.12) & -0.01 (-0.05) & -0.03 (-0.16) \\
+$R^2$          & 0.19        & 0.17        & 0.16        & 0.15        \\
+\hline
+\end{tabular}
+\label{table:rx2DisMD}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Bond risk premia regressions including macroeconomic disagreement and the yields.} We run the regressions 
+$rx_{\tau,t+4} = a + b_1 DD_t + b_2 MD_t + c'Y_t \epsilon_{\tau,t+4}$, where $DD_t$ is the implied demand disagreement, $MD_t$ is the implied macroeconomic disagreement and$Y_t=\left(Y_{1,t},\ldots,Y_{5,t}\right)$ is the vector of the five yields and the excess return on the bond with maturity $\tau$ is calculated as $rx_{\tau,t+4} = \tau y_{\tau,t} - \left(\tau-4\right)y_{\tau-4,t+4} - y_{1,t}$ where each period is a quarter. The coefficients are standardized and the t-statistic are Newey-West corrected with 4 lags. T-statistics in the data are reported in brackets.}
+\begin{tabular}{lcccc}
+\hline
+\hline
+& \multicolumn{4}{c}{Maturity} \\
+ &  2 & 3 &  4 & 5 \\
+\hline
+DD               & 0.33 (2.50) & 0.35 (2.62) & 0.36 (2.74) & 0.37 (2.83) \\
+MD        & -0.21 (-1.33) & -0.22 (-1.34) & -0.23 (-1.36) & -0.24 (-1.37) \\
+Y1        & -6.55 (-0.51) & -9.20 (-0.69) & -11.66 (-0.87) & -13.90 (-1.06) \\
+Y2       & 63.36 (0.74) & 72.76 (0.82) & 83.61 (0.96) & 94.10 (1.10) \\
+Y3       & -163.59 (-0.81) & -177.83 (-0.86) & -197.69 (-0.97) & -217.22 (-1.10) \\
+Y4      & 161.71 (0.80) & 171.99 (0.83) & 188.51 (0.93) & 204.58 (1.04) \\
+Y5        & -54.45 (-0.75) & -57.32 (-0.77) & -62.42 (-0.86) & -67.24 (-0.95) \\
+$R^2$                  & 0.34 & 0.29 & 0.27 & 0.26 \\
+\hline
+\end{tabular}
+\label{table:rx2DisMD_YLD}
+\end{table}
