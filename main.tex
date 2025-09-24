@@ -359,7 +359,7 @@ In order to capture a slow moving change in the composition of types with a long
 \begin{figure}[htbp]
 \centering
 \vspace{0.1in}
-\includegraphics[width=.5\textwidth]{figuresJFE/MeanDisagreementDataAndModel.png} 
+\includegraphics[width=.5\textwidth]{figures/MeanDisagreementDataAndModel.png} 
 \caption{\textbf{Yield Disagreement due to Demand Disagreement.} This figure compares yield disagreement due to demand disagreement in both the model and data across forecast horizons of one to four quarters. Yield disagreement is measured as the cross-sectional standard deviation of residuals from individual yield forecasts based on macroeconomic fundamentals (Section \ref{sec:empirics}). In the model, yield disagreement is derived from the cross-sectional standard deviation of real short rate forecasts by patient and impatient agents at four demand disagreement levels ($\sigma_{\Delta}= 0.2, 0.4, 0.6, 0.8$), all below empirical observations. Consequently, $\sigma_{\Delta}=0.8$ is selected as the baseline level for demand disagreement in subsequent analysis.} \label{fig:DemandDisagreementYieldModelAndData} 
 \end{figure}
 
@@ -374,12 +374,12 @@ Before detailing the economic mechanism of our demand disagreement model, we fir
 \centering
 \vspace{0.1in}
 \begin{tabular}{cc}
-\includegraphics[width=.4\textwidth]{figuresJFE/APUnconditionalExcessReturnsJFE.png} &
-\includegraphics[width=.4\textwidth]{figuresJFE/APUnconditionalStockMarketVolatilityJFE.png} \\
-\includegraphics[width=.4\textwidth]{figuresJFE/ExRBond5yearJFE.png} &
-\includegraphics[width=.4\textwidth]{figuresJFE/BondVola5yearJFE.png} \\
-\includegraphics[width=.4\textwidth]{figuresJFE/UnconditionalYieldsJFE.png} &
-\includegraphics[width=.4\textwidth]{figuresJFE/UnconditionalYieldVolatilitiesJFE.png} \\ 
+\includegraphics[width=.4\textwidth]{figures/APUnconditionalExcessReturnsJFE.png} &
+\includegraphics[width=.4\textwidth]{figures/APUnconditionalStockMarketVolatilityJFE.png} \\
+\includegraphics[width=.4\textwidth]{figures/ExRBond5yearJFE.png} &
+\includegraphics[width=.4\textwidth]{figures/BondVola5yearJFE.png} \\
+\includegraphics[width=.4\textwidth]{figures/UnconditionalYieldsJFE.png} &
+\includegraphics[width=.4\textwidth]{figures/UnconditionalYieldVolatilitiesJFE.png} \\ 
 \end{tabular}
 \caption{\textbf{Unconditional Asset Pricing Moments.} This figure presents six key asset pricing moments: expected excess stock market return (top-left), stock market volatility (top-right), excess return on five-year bonds (middle-left), five-year bond return volatility (middle-right), the yield curve (bottom-left), and yield volatility (bottom-right). These moments are derived from simulated unconditional distributions of $\tilde{\alpha}$ and $\tilde{f}$ across various demand disagreement levels ($\sigma_{\Delta}$), based on $500,000$ years of monthly model simulations. Demand disagreement increases expected stock and bond returns, yields, the slope of the term structure, and yield volatilities.}   \label{fig:UnconditionalAP} 
 \end{figure}
@@ -417,10 +417,10 @@ Output shocks do not affect the consumption share because investors have the sam
 \centering
 \vspace{0.1in}
 \begin{tabular}{cc}
-\includegraphics[width=.3\textwidth]{figuresJFE/ConsumptionShareDiffusion.png} &
-\includegraphics[width=.3\textwidth]{figuresJFE/ConsumptionShareDrift.png} \\
-\includegraphics[width=.3\textwidth]{figuresJFE/HistConsumptionShare.png} &
-\includegraphics[width=.3\textwidth]{figuresJFE/AverageConsumptionShare.png}
+\includegraphics[width=.3\textwidth]{figures/ConsumptionShareDiffusion.png} &
+\includegraphics[width=.3\textwidth]{figures/ConsumptionShareDrift.png} \\
+\includegraphics[width=.3\textwidth]{figures/HistConsumptionShare.png} &
+\includegraphics[width=.3\textwidth]{figures/AverageConsumptionShare.png}
 \end{tabular}
 \caption{\textbf{The consumption share.} The top left graph shows the volatility $\sigma_{f,t}$ and the top right graph shows the drift $\mu_{f,t}$ of the consumption share dynamics as a function of the consumption share for three levels of disagreement $\sigma_{\Delta}$. The drift of the consumption share $\mu_{f,t}$ in the top right graph depends on the fraction of patient newborns $\alpha_t$ which is fixed at 0.5. The left graph shows the unconditional distribution of the consumption share of patient investors $\tilde{f}$ and the right graph shows the unconditional mean of the consumption share of patient investors $\mathrm{E}[\tilde{f}]$ as a function of the birth/mortality rate $\nu$. The histograms and unconditional means in the bottom row are based on $500,000$ years of monthly observations for each value of disagreement $\sigma_{\Delta}$. The unconditional mean of the consumption share of patient investors decreases and the volatility increases with demand disagreement.} \label{fig:ConsumptionShare} 
 \end{figure}
@@ -634,7 +634,8 @@ We develop an overlapping generations (OLG) model in which the cross-sectional d
  \begingroup
     	\setstretch{1.21}
 	\bibliographystyle{jfe}
-	\bibliography{OLGBeliefsAccepted}\label{references}
+	\bibliography{OLGBeliefsAccepted}
+	\label{references}
 \endgroup   
 
 \renewcommand{\baselinestretch}{1}  % linespacing, 2 doublespace
