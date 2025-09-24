@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1758751975.68469 "main.aux" "main.bbl" "main" 1758751976.0443 2
+["bibtex main"] 1758753089.33522 "main.aux" "main.bbl" "main" 1758753089.69055 2
   "./OLGBeliefsAccepted.bib" 1758749308 50618 cd918c9dcda8be78b088b6baa1ca6c5d ""
   "./jfe.bst" 1758749308 28647 2f621eb1d31561b97a88218077324829 ""
-  "main.aux" 1758751974 34257 e60dbef38f82ebe4f5885b03b6607161 "pdflatex"
+  "main.aux" 1758753089 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1758751972.69363 "d:/Github/DemandDisagreement/main.tex" "main.pdf" "main" 1758751976.04446 0
+["pdflatex"] 1758753085.57932 "d:/Github/DemandDisagreement/main.tex" "main.pdf" "main" 1758753088.76935 0
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1738579087 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1738579709 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm" 1738579443 3584 1a7de6c99457381c64abc1a7c545505f ""
@@ -154,7 +154,7 @@
   "d:/Github/DemandDisagreement/main.tex" 1758751904 112961 be8c1210d6c1d6d2d5e7837a47b961f3 ""
   "figures/APUnconditionalExcessReturnsJFE.png" 1758748967 80238 5c94e0b82b2aeca777d10e857d459dcc ""
   "figures/APUnconditionalStockMarketVolatilityJFE.png" 1758748910 81502 fa442eb99d24e8a69291b866db73bbd0 ""
-  "figures/AverageConsumptionShare.png" 1758749308 171275 3421a39d8c13b3ba550076c99551b240 ""
+  "figures/AverageConsumptionShare.png" 1758753078 37775 91354cc87f574d3750b9776ed6c62f4c ""
   "figures/BondVola5yearJFE.png" 1758749013 84545 f4fa17ded0f7183842fe152eb306ea69 ""
   "figures/ConsumptionShareDiffusion.png" 1758749308 157445 a326f820b24414d0b616cd564c865cc0 ""
   "figures/ConsumptionShareDrift.png" 1758749308 156328 9be24e1f58f35e9893f2a9a7c024cc9d ""
@@ -170,10 +170,10 @@
   "figures/ffilter.png" 1758749308 37510 6fd1dd1fa563a7b8a08dbfa2ff169298 ""
   "figures/volAPV3.png" 1758750801 179874 fe76f1bcc3343593220a7ab05f3cc3ee ""
   "figures/yieldfilter.png" 1758749308 58390 b02e9fb08119a3e82c1a76ba285a0279 ""
-  "main.aux" 1758751974 34257 e60dbef38f82ebe4f5885b03b6607161 "pdflatex"
-  "main.bbl" 1758751976 14640 5bb7b56139b822dda850265a571564fe "bibtex main"
-  "main.out" 1758751974 4718 c7fc2f875274cd68c5aaeb5981911c9f "pdflatex"
-  "main.spl" 1758751973 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1758753089 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.bbl" 1758753089 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 0 -1 0 "pdflatex"
+  "main.spl" 1758753086 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1758751904 112961 be8c1210d6c1d6d2d5e7837a47b961f3 ""
   (generated)
   "main.aux"
