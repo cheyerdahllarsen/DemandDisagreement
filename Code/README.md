@@ -10,7 +10,7 @@ This replication package contains the code and data necessary to reproduce the r
 
 ☑ I certify that the author(s) of the manuscript have legitimate access to and permission to use the data used in this manuscript.
 
-☑ I certify that the author(s) of the manuscript have documented permission to redistribute/publish the data contained within this replication package. Appropriate permissions are documented in the LICENSE.txt file.
+☑ I certify that the author(s) of the manuscript have documented permission to redistribute/publish the data contained within this replication package. 
 
 ### Summary of Availability
 
