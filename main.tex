@@ -1,27 +1,20 @@
 \documentclass[preprint,11pt,authoryear]{elsarticle}
 
-\usepackage{amsmath,amsthm,graphicx,amsfonts,booktabs,caption,hyperref,url,xcolor,float,array,multirow,changepage}
+\usepackage{amsmath,amsthm,graphicx,amsfonts,booktabs,url,xcolor,float,array,multirow,changepage}
 \usepackage[font=small,labelfont=bf,tableposition=top]{caption}
-%\usepackage{jf}
 \usepackage{natbib}
 \usepackage{setspace}
-\DeclareCaptionLabelFormat{andtable}{#1~#2  \&  \tablename~\thetable}
+\usepackage{hyperref}
+    
      
-     
-
-	
- \setlength{\textwidth}{6.95in}
- \setlength{\textheight}{8.70in}
-  \setlength{\oddsidemargin}{-25pt}
-    \setlength{\topmargin}{-0.10in}
+\setlength{\textwidth}{6.95in}
+\setlength{\textheight}{8.70in}
+\setlength{\oddsidemargin}{-25pt}
+\setlength{\topmargin}{-0.10in}
     
-    
-    
-    
-
-    \renewcommand{\baselinestretch}{2}
-    \parskip 3pt
-   \parindent 15pt
+\renewcommand{\baselinestretch}{2}
+\parskip=3pt
+\parindent=15pt
 
 \theoremstyle{plain}
 \newtheorem{lemma}{Lemma} 
@@ -36,10 +29,7 @@
 \newcommand{\ulpi}{\underline{\pi}}
 
 
-    \usepackage{multirow}
-    \usepackage{array}
-    \usepackage{changepage}
-    \newcommand{\w}{1.5cm}
+\newcommand{\w}{1.5cm}
  
 
 \renewcommand{\thesection}{\arabic{section}}
@@ -59,7 +49,7 @@
 
 \title{Demand Disagreement\tnoteref{t1}}
 \tnotetext[t1]{Nikolai Roussanov was the editor for this article. We thank the editor and the anonymous referees for their constructive feedback.~For helpful comments and
-discussions, we would like to thank Patrick Bolton, Jo\~ao Cocco, Jason Donaldson, James Dow, Paul Ehling, Michael Gallmeyer, Nicolae G\^arleanu, Francisco Gomes, Matthieu Gomez, Valentin Haddad, Burton Hollifield, Mark Huson, Sergey Kovbasyuk, Lars Kuehn, Stavros Panageas, Anna Pavlova, Julien P\'enasse, Christian Opp, Emilio Osambela, Duane Seppi, Gyuri Venter, Fernando Zapatero, seminar participants at the London Business School, the Tepper School of Business of Carnegie Mellon University, Rutgers University, the Kelley School of Business at Indiana University, the Leeds School of Business of the University of Colorado Boulder, the University of North Carolina at Chapel Hill, the Probability/Math Finance Seminar Series at Carnegie Mellon, the Federal Reserve Bank of Chicago, the Wisconsin School of Business, the Alberta School of Business, the Mays Business School, and conference participants at the 6th HEC-McGill Winter Finance Workshop, the 18th Finance Theory Group Meeting at MIT, the London Empirical Asset Pricing Meeting 2018, the EEA-ESEM 2018 in Cologne, the Society of Economics and Dynamics Annual Meeting 2018 in Mexico City, the Northern Finance Association Conference 2018 in Charlevoix, the SFS Cavalcade 2019 at Carnegie Mellon, the 2020 North American Winter Meeting of the Econometric Society in San Diego, the 2020 European Winter Finance Conference in Meg\`eve, and the Finance Down Under 2020 Conference in Melbourne. We acknowledge the support of the Centre for Advanced Study (CAS) in Oslo, Norway, which funded and hosted our research project (Asset Pricing with Heterogeneous Investors in Overlapping Generations) during the 2024/25 academic year. The replication package for this paper, including code and data, is available at \url{https://github.com/cheyerdahllarsen/DemandDisagreement.git}. The data are available from Mendeley Data in three parts: Part A (DOI: 10.17632/5vpb5rzv7s.1), Part B (DOI: 10.17632/md24pnhz67.1), and Part C (DOI: 10.17632/rk343v5jk4.1).}
+discussions, we would like to thank Patrick Bolton, Jo\~ao Cocco, Jason Donaldson, James Dow, Paul Ehling, Michael Gallmeyer, Nicolae G\^arleanu, Francisco Gomes, Matthieu Gomez, Valentin Haddad, Burton Hollifield, Mark Huson, Sergey Kovbasyuk, Lars Kuehn, Stavros Panageas, Anna Pavlova, Julien P\'enasse, Christian Opp, Emilio Osambela, Duane Seppi, Gyuri Venter, Fernando Zapatero, seminar participants at the London Business School, the Tepper School of Business of Carnegie Mellon University, Rutgers University, the Kelley School of Business at Indiana University, the Leeds School of Business of the University of Colorado Boulder, the University of North Carolina at Chapel Hill, the Probability/Math Finance Seminar Series at Carnegie Mellon, the Federal Reserve Bank of Chicago, the Wisconsin School of Business, the Alberta School of Business, the Mays Business School, and conference participants at the 6th HEC-McGill Winter Finance Workshop, the 18th Finance Theory Group Meeting at MIT, the London Empirical Asset Pricing Meeting 2018, the EEA-ESEM 2018 in Cologne, the 2018 Annual Meeting of the Society for Economic Dynamics  in Mexico City, the Northern Finance Association Conference 2018 in Charlevoix, the SFS Cavalcade 2019 at Carnegie Mellon, the 2020 North American Winter Meeting of the Econometric Society in San Diego, the 2020 European Winter Finance Conference in Meg\`eve, and the Finance Down Under 2020 Conference in Melbourne. We acknowledge the support of the Centre for Advanced Study (CAS) in Oslo, Norway, which funded and hosted our research project (Asset Pricing with Heterogeneous Investors in Overlapping Generations) during the 2024/25 academic year. The replication package for this paper, including code and data, is available at \url{https://github.com/cheyerdahllarsen/DemandDisagreement.git}, archived with a permanent DOI at \href{https://doi.org/10.5281/zenodo.17202957}{https://doi.org/10.5281/zenodo.17202957}. The data are available from Mendeley Data in three parts: Part A (DOI: 10.17632/5vpb5rzv7s.1), Part B (DOI: 10.17632/md24pnhz67.1), and Part C (DOI: 10.17632/rk343v5jk4.1).}
 
 \author[BI]{Christian Heyerdahl-Larsen}
 \ead{christian.heyerdahl-larsen@bi.no}
@@ -83,7 +73,7 @@ Demand disagreement \sep disagreement correlation puzzle \sep correlation puzzle
 \section{Introduction}
 
 
-Investing involves balancing risk and return, which requires predicting future cash flows and prices. Beyond concerns about future economic conditions, investors may worry about who will be in the market when they sell an asset? Will demand be strong or weak? This demand uncertainty arises from unknown future investors' time or risk preferences, factors unrelated to macroeconomic conditions that are difficult to predict. Most asset pricing models overlook this uncertainty, assuming investor preferences and future demand are known, thus tightly linking asset prices to economic fundamentals.  
+Investing involves balancing risk and return, which requires predicting future cash flows and prices. Beyond concerns about future economic conditions, investors may worry about who will be in the market when they sell an asset. Will demand be strong or weak? This demand uncertainty arises from unknown future investors' time or risk preferences, factors unrelated to macroeconomic conditions that are difficult to predict. Most asset pricing models overlook this uncertainty, assuming investor preferences and future demand are known, thus tightly linking asset prices to economic fundamentals.  
 
 
 
@@ -94,7 +84,7 @@ We address this puzzle by allowing random shifts in the population shares of inv
 
 We show that demand disagreement generates stochastic yield volatility, time-varying bond risk premia, and an upward-sloping real yield curve. Increases in demand disagreement raise yield volatility across all maturities and predict higher future excess returns on nominal bonds. Using data from the Survey of Professional Forecasters (SPF), we construct a measure of demand disagreement by isolating the component of yield disagreement not explained by disagreement about macroeconomic fundamentals and empirically confirm its positive relationship with yield volatility and its predictive power for excess bond returns.  
 
-To formalize the effects of demand disagreement on asset prices, we develop a transparent heterogeneous agent model in an overlapping generation (OLG) framework (\cite{Blanchard2013} and \cite{Garleanu2008}). There are two types of investors, patient and impatient, whose population shares fluctuate randomly over time, generating an exogenous variation in aggregate asset demand that is independent of economic fundamentals. Investors observe current population shares but lack information about their future evolution. Each investor exhibits a "false consensus bias" as defined in \cite{RossGreenHouse77}, believing that their own type will dominate in the long run, leading to persistent disagreement about future aggregate demand for savings and, respectively, for consumption. All investors have log-utility, identical endowments, and trade in complete markets, enabling closed-form solutions for the stochastic discount factor and isolating the effects of demand disagreement from other sources of asset price variation. The OLG model ensures that neither type dominates in the long run and allows us to compute unconditional moments of equilibrium asset prices.
+To formalize the effects of demand disagreement on asset prices, we develop a transparent heterogeneous agent model in an overlapping generation (OLG) framework (\cite{Blanchard2013} and \cite{Garleanu2008}). There are two types of investors, patient and impatient, whose population shares fluctuate randomly over time, generating an exogenous variation in aggregate asset demand that is independent of economic fundamentals. Investors observe current population shares but lack information about their future evolution. Each investor exhibits a "false consensus bias" as defined in \cite{RossGreenHouse77}, believing that their own type will dominate in the long run, leading to persistent disagreement about future aggregate demand for savings and consumption. All investors have log-utility, identical endowments, and trade in complete markets, enabling closed-form solutions for the stochastic discount factor and isolating the effects of demand disagreement from other sources of asset price variation. The OLG model ensures that neither type dominates in the long run and allows us to compute unconditional moments of equilibrium asset prices.
 
 
 
@@ -149,7 +139,7 @@ In classical asset pricing models, all fundamental shocks
   \caption{{\bf Correlation Puzzle.} This table presents the correlations between dividend and consumption growth with (i) stock returns, (ii) percentage changes in trading volume, and (iii) changes in the one-year real yield. The data are sourced from Shiller's and NYSE web pages and cover yearly observations from 1891 to 2009. The results indicate a low correlation between asset returns/trading volume and fundamental factors such as dividends and consumption growth.}
  \label{table:CorrelationPuzzle}
  \end{table}
- While there is no trade in representative agent models like those by \cite{campbell-cochrane:99} or \cite{bansal-yaron:04}, asset pricing models with heterogeneous agents predict a strong link between trading volume and fundamentals, which is at odds with the weak short-term and long-term correlations observed between stock market trading volume and both dividend and consumption growth, as displayed in the second main column of Table \ref{table:CorrelationPuzzle}.\footnote{We refer the reader to \cite{panageas:2020} for a survey of the literature on heterogeneous agent models.} The third main column of Table 1 shows low correlations between the one year real yield and consumption/dividend growth. %The last column of Table \ref{table:CorrelationPuzzle} shows that there is a low correlation between changes in the real one-year yield and measures at output growth.
+ While there is no trade in representative agent models like those by \cite{campbell-cochrane:99} or \cite{bansal-yaron:04}, asset pricing models with heterogeneous agents predict a strong link between trading volume and fundamentals, which is at odds with the weak short-term and long-term correlations observed between stock market trading volume and both dividend and consumption growth, as displayed in the second main column of Table \ref{table:CorrelationPuzzle}.\footnote{We refer the reader to \cite{panageas:2020} for a survey of the literature on heterogeneous agent models.} The third main column of Table \ref{table:CorrelationPuzzle} shows low correlations between the one year real yield and consumption/dividend growth.  
 
 
 \subsection{Disagreement Correlation Puzzle} \label{sec:dis}
@@ -197,7 +187,7 @@ In the SPF, each forecaster reports their forecast for the three-month Treasury 
 %
 where $\hat{X}^{i,F}_{t,t+\Delta t}$ denotes the vector of macroeconomic forecasts made by forecaster $i$ at time $t$ for $\Delta t$ quarters ahead and $\hat{y}^i_{t,t+\Delta}$ denotes the corresponding Treasury yield forecast. We also include the nowcast of each forecaster for the yield, $\hat{y}^i_{t,t}$ to account for the persistence in yields. 
 
-For each forecaster $i$, the residual term $\varepsilon^i_{t,t+\Delta t}$ captures the yield forecast that is not related to their forecast of macroeconomic fundamentals. Hence, we use as a proxy for demand disagreement the cross-sectional standard deviation of this residual.\footnote{In the Internet Appendix we consider an alternative based on the logarithmetic specification in Table \ref{tab:spanningregressions}. In this case, we define the demand disagreement as $DD_{t,T} = e^{\epsilon_{t,T}}$ where $\epsilon_{t,T}$ is the error term of the spanning regression using logarithmic disagreements. This ensures that the disagreement is positive. The key finding is that qualitatively the results are the same. However, the amount of disagreement measured this way is much higher than the disagreement we measure in our main specification.} Specifically, 
+For each forecaster $i$, the residual term $\varepsilon^i_{t,t+\Delta t}$ captures the yield forecast that is not related to their forecast of macroeconomic fundamentals. Hence, we use as a proxy for demand disagreement the cross-sectional standard deviation of this residual.\footnote{In the Internet Appendix we consider an alternative based on the logarithmic specification in Table \ref{tab:spanningregressions}. In this case, we define the demand disagreement as $DD_{t,T} = e^{\epsilon_{t,T}}$ where $\epsilon_{t,T}$ is the error term of the spanning regression using logarithmic disagreements. This ensures that the disagreement is positive. The key finding is that qualitatively the results are the same. However, the amount of disagreement measured this way is much higher than the disagreement we measure in our main specification.} Specifically, 
 %
 \begin{equation}\label{DD}
     DD_{t,t+ \Delta t} = \text{SD}_t \left(\varepsilon^i_{t,t+\Delta t} \right),
@@ -549,7 +539,7 @@ Our demand disagreement model features two latent state variables: the exogenous
 \includegraphics[width=.45\textwidth]{figures/yieldfilter.png} 
 \includegraphics[width=.45\textwidth]{figures/DDfilter.png} \\ 
 \end{tabular}
-\caption{\textbf{Assessing the Goodness-of-Model-Fit.} The figure shows the estimated $\alpha_t$ in the top-left, the estimated $f_t$ in the top-right, and the observed and fitted two year real yield in the bottom-left and the observed and fitted demand disagreement in the bottom-right. We estimate the latent state variables using the Unscented Kalman Filter (UKF). The observation equations are $y_t = h(l_t, f_t) + e_{y,t}$ and $DD_t = g(l_t,f_t) + e_{DD,t}$ with $\alpha_t = 1/(1+\exp(-l_t))$.  We use the Euler discretization of the latent state variables with quarterly frequency as in the data. The observation-noise variance–covariance matrix is diagonal with $Var(e_{y,t}) = 0.001 \cdot var(y_{2,t})$ and $Var(e_{DD,t}) = 0.0005 \cdot  var(DD_t)$. The prior variance–covariance matrix for the two state variables is diagonal, with each variance set to $0.01$. The UKF uses data from the first quarter of $1999$ until the second quarter of $2024$. The filtered model fits the observed demand disagreement and the real two-year yield well, even though a single shock drives both the exogenous and endogenous state variables.}  \label{fig:UKFalphaandf}
+\caption{\textbf{Assessing the Goodness-of-Model-Fit.} The figure shows the estimated $\alpha_t$ in the top-left, the estimated $f_t$ in the top-right, and the observed and fitted two year real yield in the bottom-left and the observed and fitted demand disagreement in the bottom-right. We estimate the latent state variables using the Unscented Kalman Filter (UKF). The observation equations are $y_t = h(l_t, f_t) + e_{y,t}$ and $DD_t = g(l_t,f_t) + e_{DD,t}$ with $\alpha_t = 1/(1+\exp(-l_t))$.  We use the Euler discretization of the latent state variables with quarterly frequency as in the data. The observation-noise variance-covariance matrix is diagonal with $Var(e_{y,t}) = 0.001 \cdot var(y_{2,t})$ and $Var(e_{DD,t}) = 0.0005 \cdot  var(DD_t)$. The prior variance-covariance matrix for the two state variables is diagonal, with each variance set to $0.01$. The UKF uses data from the first quarter of $1999$ until the second quarter of $2024$. The filtered model fits the observed demand disagreement and the real two-year yield well, even though a single shock drives both the exogenous and endogenous state variables.}  \label{fig:UKFalphaandf}
 \end{figure}
 %
 The plot on the top left of Figure \ref{fig:UKFalphaandf} shows an upward trend in implied $\alpha_t$ from $1999$ to $2022$, indicating an increasing fraction of better savers entering the economy. The consumption share exhibits similar but less pronounced trends. While the fraction of patient newborns has risen above the long-run mean, increasing the demand for savings, the consumption share is less persistent and more volatile than the newborn fraction. Notable fluctuations include a significant drop in the share of patient agents' consumption around 2005, coinciding with a temporary $\alpha_t$ decline and a sharp $f_t$ decrease in recent years as real rates increased. The bottom panels demonstrate that, despite the parsimony of the model having only one shock to the exogenous and endogenous state variables, the filtered model provides a reasonable fit to both the observed demand disagreement and the real two-year yield. Notably, because both state variables are driven by a single shock in this nonlinear model, it is less flexible in fitting both observables.
